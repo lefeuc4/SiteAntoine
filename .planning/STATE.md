@@ -42,8 +42,8 @@ Progress: [░░░░░░░░░░] 0%
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- Stack: Next.js 16 + Payload CMS 3 + PostgreSQL 17 + Tailwind CSS 4 + Caddy (see research/SUMMARY.md)
-- Deployment: Docker Compose sur VPS existant
+- Stack: Next.js 16 + Payload CMS 3 + Neon PostgreSQL + Tailwind CSS 4 (see research/SUMMARY.md)
+- Deployment: Vercel (gratuit) — OVH mutualise ne supporte pas Node.js/Docker
 - Admin scope: Payload admin integre — pas de CMS separe
 
 ### Pending Todos
@@ -52,7 +52,7 @@ None yet.
 
 ### Blockers/Concerns
 
-- VPS disk capacity a confirmer avant Phase 1 (S3 storage potentiellement necessaire — voir research/SUMMARY.md Gaps)
+- Storage images: Vercel Blob ou Cloudinary a choisir en Phase 1
 - Inventaire des URLs WordPress actuelles a faire avant Phase 5 (redirections 301)
 - Payload admin French localisation a verifier pendant Phase 3 planning
 

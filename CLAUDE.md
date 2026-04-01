@@ -9,7 +9,7 @@ Site vitrine moderne pour Antoine Profit, coach bien-etre. Remplace l'ancien sit
 
 ### Constraints
 
-- **Hebergement**: VPS existant — le stack doit pouvoir tourner sur un serveur classique (Docker ou Node.js)
+- **Hebergement**: Vercel (gratuit) + Neon PostgreSQL (gratuit) — l'offre OVH mutualisee ne supporte pas Node.js/Docker
 - **Langue**: Site en francais uniquement
 - **Admin**: Interface simple, pas un CMS complet — juste editer pages + gerer programmes et resultats
 - **Contenu**: Placeholder pour v1, Antoine remplira ensuite via l'admin

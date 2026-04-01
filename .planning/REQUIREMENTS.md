@@ -44,8 +44,8 @@
 
 ### Deploiement
 
-- [ ] **DPLY-01**: Site deployable et fonctionnel sur un VPS existant (Docker ou Node.js direct)
-- [ ] **DPLY-02**: HTTPS configure avec certificat SSL automatique
+- [ ] **DPLY-01**: Site deployable et fonctionnel sur Vercel (gratuit) avec Neon PostgreSQL
+- [ ] **DPLY-02**: HTTPS configure avec domaine personnalise antoineprofit.com sur Vercel
 
 ## v2 Requirements
 

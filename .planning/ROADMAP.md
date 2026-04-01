@@ -2,7 +2,7 @@
 
 ## Overview
 
-Le projet livre un site vitrine moderne pour Antoine Profit en 5 phases ordonnees par dependances techniques. La fondation etablit le stack (Next.js + Payload + PostgreSQL) et les modeles de donnees. Les pages publiques construisent le site visible. L'interface admin donne a Antoine son autonomie. Le formulaire de contact active la conversion. La derniere phase traite le SEO, la conformite RGPD et le deploiement VPS avec coupure DNS depuis WordPress.
+Le projet livre un site vitrine moderne pour Antoine Profit en 5 phases ordonnees par dependances techniques. La fondation etablit le stack (Next.js + Payload + PostgreSQL) et les modeles de donnees. Les pages publiques construisent le site visible. L'interface admin donne a Antoine son autonomie. Le formulaire de contact active la conversion. La derniere phase traite le SEO, la conformite RGPD et le deploiement Vercel avec coupure DNS depuis WordPress.
 
 ## Phases
 
@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 2: Pages Publiques** - Les 5 pages du site vitrine, design system, navigation responsive
 - [ ] **Phase 3: Interface Admin** - CRUD programmes et resultats, edition de contenu, upload images WebP
 - [ ] **Phase 4: Formulaire de Contact** - Formulaire email + lien WhatsApp, livraison Resend, anti-spam
-- [ ] **Phase 5: SEO, Conformite & Deploiement** - SEO, RGPD/CNIL, redirections 301, VPS production, HTTPS
+- [ ] **Phase 5: SEO, Conformite & Deploiement** - SEO, RGPD/CNIL, redirections 301, Vercel production, HTTPS
 
 ## Phase Details
 
@@ -25,7 +25,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Depends on**: Nothing (first phase)
 **Requirements**: DSGN-01, DPLY-01
 **Success Criteria** (what must be TRUE):
-  1. `docker compose up` demarre l'application Next.js + PostgreSQL + Caddy sans erreur
+  1. `npm run dev` demarre l'application Next.js + Payload localement sans erreur
   2. L'interface admin Payload est accessible a `/admin` et protegee par login/password
   3. Les collections Payload (Programmes, Resultats, PageContent, Media, Users) sont definies et migrees en base
   4. La nouvelle identite visuelle (palette, typographie) est definie dans le design system Tailwind
@@ -68,12 +68,12 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: TBD
 
 ### Phase 5: SEO, Conformite & Deploiement
-**Goal**: Le site est en ligne sur le VPS d'Antoine avec HTTPS, les redirections WordPress en place, le SEO de base configure et la conformite RGPD satisfaite
+**Goal**: Le site est en ligne sur Vercel avec HTTPS, domaine personnalise, les redirections WordPress en place, le SEO de base configure et la conformite RGPD satisfaite
 **Depends on**: Phase 3, Phase 4
 **Requirements**: SEO-01, SEO-02, LGAL-01, LGAL-02, LGAL-03, DPLY-02
 **Success Criteria** (what must be TRUE):
-  1. Le site est accessible en HTTPS sur le VPS d'Antoine avec un certificat SSL valide et se redemarre automatiquement apres reboot serveur
-  2. Les anciennes URLs WordPress renvoient des redirections 301 vers les nouvelles pages (pas de 404 lors de la coupure DNS)
+  1. Le site est accessible en HTTPS sur Vercel avec le domaine antoineprofit.com configure et certificat SSL automatique
+  2. Les anciennes URLs WordPress renvoient des redirections 301 vers les nouvelles pages (configurees dans vercel.json/next.config)
   3. Chaque page publique dispose de meta tags, titre et structure HTML semantique corrects (verifiable via les outils developpeur)
   4. Un bandeau cookies RGPD s'affiche au premier chargement et une page Mentions Legales est accessible
   5. Le champ de consentement CNIL est present et obligatoire dans l'admin pour chaque photo client

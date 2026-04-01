@@ -29,7 +29,7 @@ Antoine peut mettre a jour son site (textes, images, programmes, resultats) de m
 - [ ] Design moderne, nouvelle identite visuelle (pas les couleurs rose/rouge actuelles)
 - [ ] Site responsive (mobile-first)
 - [ ] Performance : chargement rapide, pas de plugins lourds
-- [ ] Deploiement sur VPS existant
+- [ ] Deploiement sur Vercel (gratuit) + Neon PostgreSQL
 
 ### Out of Scope
 
@@ -44,13 +44,13 @@ Antoine peut mettre a jour son site (textes, images, programmes, resultats) de m
 
 - Le site actuel (antoineprofit.com) tourne sur WordPress 6.2.9 avec Visual Composer, Revolution Slider, WooCommerce, Essential Grid. Lourd, lent, difficile a modifier.
 - Antoine veut pouvoir gerer son contenu seul, sans developpeur.
-- Hebergement sur un VPS existant (pas Vercel/Netlify).
+- Hebergement OVH actuel = mutualise (PHP only, pas de Docker/Node). Migration vers Vercel (gratuit) pour Next.js + Neon PostgreSQL gratuit.
 - Contenu entierement neuf — pas de migration du contenu actuel.
 - Le site cible un public francophone interessé par le coaching bien-etre / nutrition / fitness.
 
 ## Constraints
 
-- **Hebergement**: VPS existant — le stack doit pouvoir tourner sur un serveur classique (Docker ou Node.js)
+- **Hebergement**: Vercel (gratuit) + Neon PostgreSQL (gratuit) — l'offre OVH mutualisee ne supporte pas Node.js/Docker
 - **Langue**: Site en francais uniquement
 - **Admin**: Interface simple, pas un CMS complet — juste editer pages + gerer programmes et resultats
 - **Contenu**: Placeholder pour v1, Antoine remplira ensuite via l'admin
@@ -62,7 +62,7 @@ Antoine peut mettre a jour son site (textes, images, programmes, resultats) de m
 | Framework moderne (pas WordPress) | Performance, maintenabilite, legerete | — Pending |
 | Nouvelle identite visuelle | L'ancienne fait datee, besoin de moderniser | — Pending |
 | Contact uniquement (pas e-commerce) | Simplifier v1, le paiement n'est pas prioritaire | — Pending |
-| VPS deployment | Infrastructure existante a reutiliser | — Pending |
+| Vercel + Neon (pas OVH) | OVH mutualise = PHP only, pas compatible Next.js | — Pending |
 
 ## Evolution
 
@@ -82,4 +82,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-01 after initialization*
+*Last updated: 2026-04-01 after hosting change (OVH mutualise -> Vercel)*
