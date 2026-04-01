@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "WebFetch(domain:antoineprofit.com)",
+      "Bash(node:*)",
+      "Bash(git config:*)",
+      "Bash(find .:*)",
+      "WebSearch",
+      "WebFetch(domain:smallbusinessweb.co)",
+      "WebFetch(domain:vibeotter.com)",
+      "WebFetch(domain:softwaremill.com)",
+      "WebFetch(domain:payloadcms.com)",
+      "WebFetch(domain:lovelyimpact.com)",
+      "WebFetch(domain:mypersonaltrainerwebsite.com)"
+    ]
+  }
+}
