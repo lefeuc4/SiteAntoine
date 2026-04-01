@@ -2,6 +2,9 @@ import type { CollectionConfig } from 'payload'
 
 export const Media: CollectionConfig = {
   slug: 'media',
+  access: {
+    read: () => true,
+  },
   upload: {
     mimeTypes: ['image/jpeg', 'image/png', 'image/webp'],
     // NOTE: imageSizes will NOT take effect with clientUploads: true on Vercel Blob.

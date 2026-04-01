@@ -2,6 +2,9 @@ import type { CollectionConfig } from 'payload'
 
 export const PageContent: CollectionConfig = {
   slug: 'page-content',
+  access: {
+    read: () => true,
+  },
   admin: {
     useAsTitle: 'section',
     defaultColumns: ['page', 'section'],
