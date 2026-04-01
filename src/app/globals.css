@@ -1,1 +1,26 @@
 @import 'tailwindcss';
+
+@theme {
+  /* Palette "Energie & Performance" (D-02) */
+  --color-blanc-pur: #F8FAFC;
+  --color-bleu-nuit: #0F172A;
+  --color-bleu-electrique: #3B82F6;
+  --color-vert-energie: #10B981;
+  --color-gris-ardoise: #64748B;
+  --color-rouge-erreur: #EF4444;
+
+  /* Typographie (D-06, D-07) */
+  --font-heading: var(--font-montserrat), 'Montserrat', sans-serif;
+  --font-body: var(--font-inter), 'Inter', sans-serif;
+
+  /* Font sizes — 4 roles only */
+  --font-size-sm: 0.875rem;   /* 14px — label */
+  --font-size-base: 1rem;     /* 16px — body */
+  --font-size-xl: 1.75rem;    /* 28px — heading */
+  --font-size-4xl: 2.25rem;   /* 36px — display */
+
+  /* Animation timing (D-05) */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease-out;
+}
