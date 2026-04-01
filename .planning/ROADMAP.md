@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. La nouvelle identite visuelle (palette, typographie) est definie dans le design system Tailwind
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Bootstrap Next.js + Payload CMS, collections, Neon PostgreSQL + Vercel Blob
+- [x] 01-01-PLAN.md — Bootstrap Next.js + Payload CMS, collections, Neon PostgreSQL + Vercel Blob
 - [ ] 01-02-PLAN.md — Design system Tailwind v4 (palette, fonts, tokens) + placeholder page
 **UI hint**: yes
 

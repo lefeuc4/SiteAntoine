@@ -44,7 +44,7 @@
 
 ### Deploiement
 
-- [ ] **DPLY-01**: Site deployable et fonctionnel sur Vercel (gratuit) avec Neon PostgreSQL
+- [x] **DPLY-01**: Site deployable et fonctionnel sur Vercel (gratuit) avec Neon PostgreSQL
 - [ ] **DPLY-02**: HTTPS configure avec domaine personnalise antoineprofit.com sur Vercel
 
 ## v2 Requirements
@@ -100,7 +100,7 @@
 | LGAL-01 | Phase 5 | Pending |
 | LGAL-02 | Phase 5 | Pending |
 | LGAL-03 | Phase 5 | Pending |
-| DPLY-01 | Phase 1 | Pending |
+| DPLY-01 | Phase 1 | Complete |
 | DPLY-02 | Phase 5 | Pending |
 
 **Coverage:**
