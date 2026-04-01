@@ -29,7 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. L'interface admin Payload est accessible a `/admin` et protegee par login/password
   3. Les collections Payload (Programmes, Resultats, PageContent, Media, Users) sont definies et migrees en base
   4. La nouvelle identite visuelle (palette, typographie) est definie dans le design system Tailwind
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Bootstrap Next.js + Payload CMS, collections, Neon PostgreSQL + Vercel Blob
+- [ ] 01-02-PLAN.md — Design system Tailwind v4 (palette, fonts, tokens) + placeholder page
 **UI hint**: yes
 
 ### Phase 2: Pages Publiques
@@ -86,7 +89,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Fondation | 0/? | Not started | - |
+| 1. Fondation | 0/2 | Planning complete | - |
 | 2. Pages Publiques | 0/? | Not started | - |
 | 3. Interface Admin | 0/? | Not started | - |
 | 4. Formulaire de Contact | 0/? | Not started | - |
