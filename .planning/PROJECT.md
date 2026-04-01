@@ -12,7 +12,8 @@ Antoine peut mettre a jour son site (textes, images, programmes, resultats) de m
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Design moderne, nouvelle identite visuelle (pas les couleurs rose/rouge actuelles) — Validated in Phase 1: Fondation
+- [x] Deploiement sur Vercel (gratuit) + Neon PostgreSQL — Validated in Phase 1: Fondation (stack operational locally)
 
 ### Active
 
@@ -26,10 +27,10 @@ Antoine peut mettre a jour son site (textes, images, programmes, resultats) de m
 - [ ] Interface admin : editer les textes et images de chaque page
 - [ ] Interface admin : creer/modifier/supprimer des programmes
 - [ ] Interface admin : creer/modifier/supprimer des resultats avant/apres
-- [ ] Design moderne, nouvelle identite visuelle (pas les couleurs rose/rouge actuelles)
+
 - [ ] Site responsive (mobile-first)
 - [ ] Performance : chargement rapide, pas de plugins lourds
-- [ ] Deploiement sur Vercel (gratuit) + Neon PostgreSQL
+
 
 ### Out of Scope
 
@@ -59,10 +60,10 @@ Antoine peut mettre a jour son site (textes, images, programmes, resultats) de m
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Framework moderne (pas WordPress) | Performance, maintenabilite, legerete | — Pending |
-| Nouvelle identite visuelle | L'ancienne fait datee, besoin de moderniser | — Pending |
+| Framework moderne (pas WordPress) | Performance, maintenabilite, legerete | Next.js 16 + Payload CMS 3 — Phase 1 |
+| Nouvelle identite visuelle | L'ancienne fait datee, besoin de moderniser | Palette "Energie & Performance", Montserrat/Inter — Phase 1 |
 | Contact uniquement (pas e-commerce) | Simplifier v1, le paiement n'est pas prioritaire | — Pending |
-| Vercel + Neon (pas OVH) | OVH mutualise = PHP only, pas compatible Next.js | — Pending |
+| Vercel + Neon (pas OVH) | OVH mutualise = PHP only, pas compatible Next.js | Neon PostgreSQL connecte, Vercel Blob configure — Phase 1 |
 
 ## Evolution
 
@@ -82,4 +83,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-01 after hosting change (OVH mutualise -> Vercel)*
+*Last updated: 2026-04-01 after Phase 1 (Fondation) complete — stack operational, design system defined*
