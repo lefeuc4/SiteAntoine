@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 01-01-PLAN.md, awaiting human verification of admin UI
-last_updated: "2026-04-01T21:03:49.499Z"
+status: verifying
+stopped_at: Completed 01-02-PLAN.md
+last_updated: "2026-04-01T21:51:15.108Z"
 last_activity: 2026-04-01
 progress:
   total_phases: 5
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-01)
 
 Phase: 01 (fondation) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-01
 
 Progress: [░░░░░░░░░░] 0%
@@ -53,6 +53,7 @@ Progress: [░░░░░░░░░░] 0%
 
 *Updated after each plan completion*
 | Phase 01 P01 | 20min | 3 tasks | 18 files |
+| Phase 01 P02 | 15min | 3 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,7 @@ Recent decisions affecting current work:
 - Admin scope: Payload admin integre — pas de CMS separe
 - [Phase 01]: Public read access on content collections (Programmes, Resultats, PageContent, Media) for public API
 - [Phase 01]: Payload 3.81.0 requires serverFunction prop in layout.tsx (handleServerFunctions + use server)
+- [Phase 01]: Font loading via next/font variable prop bridges to Tailwind @theme tokens for zero FOUT
 
 ### Pending Todos
 
@@ -79,6 +81,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-01T21:03:49.495Z
-Stopped at: Completed 01-01-PLAN.md, awaiting human verification of admin UI
+Last session: 2026-04-01T21:51:15.105Z
+Stopped at: Completed 01-02-PLAN.md
 Resume file: None
