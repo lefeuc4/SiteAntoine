@@ -1,7 +1,7 @@
 ---
 phase: 2
 slug: pages-publiques
-status: draft
+status: approved
 shadcn_initialized: false
 preset: none
 created: 2026-04-02
@@ -22,7 +22,7 @@ created: 2026-04-02
 | Preset | not applicable |
 | Component library | none — components built from scratch this phase |
 | Icon library | lucide-react (recommended — lightweight, tree-shakeable, compatible with Next.js App Router) |
-| Font | Montserrat (headings, weights 700/900) + Inter (body, weight 400) via `next/font` |
+| Font | Montserrat (headings, weight 700) + Inter (body, weight 400) via `next/font` |
 
 Source: `src/app/globals.css`, `src/app/layout.tsx` (Phase 1 deliverables)
 
@@ -55,7 +55,7 @@ Source: `src/app/globals.css` `@theme` block (Phase 1, D-06, D-07)
 
 | Role | Size | Tailwind token | Family | Weight | Line Height | Usage |
 |------|------|----------------|--------|--------|-------------|-------|
-| Display | 36px (2.25rem) | `text-4xl` → `--font-size-4xl` | Montserrat | 900 (Black) | 1.1 | Hero headline, page H1 |
+| Display | 36px (2.25rem) | `text-4xl` → `--font-size-4xl` | Montserrat | 700 (Bold) | 1.1 | Hero headline, page H1 |
 | Heading | 28px (1.75rem) | `text-xl` → `--font-size-xl` | Montserrat | 700 (Bold) | 1.2 | Section titles, card titles, H2/H3 |
 | Body | 16px (1rem) | `text-base` → `--font-size-base` | Inter | 400 (Regular) | 1.6 | Paragraph text, descriptions, testimonials |
 | Label | 14px (0.875rem) | `text-sm` → `--font-size-sm` | Inter | 400 (Regular) | 1.4 | Tags, captions, duration labels, meta info |
@@ -79,7 +79,7 @@ Source: `src/app/globals.css` `@theme` block (Phase 1, D-01 to D-04)
 
 Accent (`bleu-electrique`) reserved for:
 1. Primary CTA buttons ("Prendre contact", "Voir les programmes")
-2. Header CTA button (always visible per D-04)
+2. Header CTA button "Me contacter" (always visible per D-04)
 3. Before/after slider drag handle
 4. Active/current page indicator in nav
 5. Focus ring on interactive elements (accessibility)
@@ -113,7 +113,7 @@ Container: max-width `1280px`, centered, horizontal padding `xl` (32px) on mobil
 - Transition: `--transition-slow` (300ms ease-out) on background and shadow
 - Logo left, nav center (desktop), CTA button right
 - CTA button: `bg-bleu-electrique text-blanc-pur` — always visible (D-04)
-- Mobile: logo left, hamburger right (44px touch target)
+- Mobile: logo left, hamburger right (44px touch target, `aria-label="Ouvrir le menu"` / `aria-label="Fermer le menu"` toggled)
 - Hamburger opens full-screen overlay (`bg-bleu-nuit/95`) with nav links centered vertically
 - Nav links: 5 items max — Accueil, Mon Histoire, Mes Services, Les Programmes, Resultats
 
@@ -129,7 +129,7 @@ Container: max-width `1280px`, centered, horizontal padding `xl` (32px) on mobil
 **Hero — split layout:**
 - Desktop: 50/50 split. Left: display headline + subheading + primary CTA button. Right: placeholder image block (full height, `bg-gris-ardoise` with coaching icon overlay)
 - Mobile: stacked. Image first (200px height, full width), text below
-- Headline: `text-4xl font-heading font-black text-bleu-nuit`
+- Headline: `text-4xl font-heading font-bold text-bleu-nuit`
 - Subheading: `text-base font-body text-gris-ardoise`
 - CTA button: `bg-bleu-electrique text-blanc-pur` rounded, `px-6 py-3`
 - Hero vertical padding: `3xl` (64px) top/bottom
@@ -205,7 +205,7 @@ Scroll reveal: apply class `.reveal` on elements, toggle `.revealed` via Interse
 |---------|------|
 | Primary CTA (header + hero + bandeau) | "Prendre contact" |
 | Secondary CTA (hero, services) | "Voir les programmes" |
-| Nav CTA button | "Contact" |
+| Nav CTA button | "Me contacter" |
 | Empty state — Programmes (no data) | "Aucun programme disponible pour le moment. Revenez bientot." |
 | Empty state — Resultats (no data) | "Les premiers resultats arrivent bientot." |
 | Error state — page fetch failed | "Contenu temporairement indisponible. Actualisez la page ou revenez dans quelques instants." |
@@ -255,11 +255,11 @@ No external component registries used in this phase. All UI built from Tailwind 
 
 ## Checker Sign-Off
 
-- [ ] Dimension 1 Copywriting: PASS
-- [ ] Dimension 2 Visuals: PASS
-- [ ] Dimension 3 Color: PASS
-- [ ] Dimension 4 Typography: PASS
-- [ ] Dimension 5 Spacing: PASS
-- [ ] Dimension 6 Registry Safety: PASS
+- [x] Dimension 1 Copywriting: PASS
+- [x] Dimension 2 Visuals: FLAG (focal point inferrable but not explicit — non-blocking)
+- [x] Dimension 3 Color: PASS
+- [x] Dimension 4 Typography: PASS
+- [x] Dimension 5 Spacing: PASS
+- [x] Dimension 6 Registry Safety: PASS
 
-**Approval:** pending
+**Approval:** approved (2026-04-02)
