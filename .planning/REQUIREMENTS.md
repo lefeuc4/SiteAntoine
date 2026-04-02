@@ -12,13 +12,13 @@
 - [ ] **PAGE-03**: Site affiche une page Mes Services avec description claire de chaque offre (consultation 1:1, coaching groupe, etc.)
 - [ ] **PAGE-04**: Site affiche une page Les Programmes listant chaque programme avec duree, contenu, objectifs et public cible
 - [ ] **PAGE-05**: Site affiche une page Resultats avec galerie avant/apres incluant temoignage complet (photos, histoire, programme suivi, duree, citation client)
-- [ ] **PAGE-06**: Navigation claire avec max 5 items, accessible depuis toutes les pages
-- [ ] **PAGE-07**: Lien/bouton de contact visible sur chaque page
+- [x] **PAGE-06**: Navigation claire avec max 5 items, accessible depuis toutes les pages
+- [x] **PAGE-07**: Lien/bouton de contact visible sur chaque page
 
 ### Design & UX
 
 - [x] **DSGN-01**: Nouvelle identite visuelle moderne et coherente (pas les couleurs rose/rouge actuelles)
-- [ ] **DSGN-02**: Design mobile-first responsive sur tous les ecrans (mobile, tablette, desktop)
+- [x] **DSGN-02**: Design mobile-first responsive sur tous les ecrans (mobile, tablette, desktop)
 - [x] **DSGN-03**: Chargement de chaque page en moins de 3 secondes
 
 ### Admin
@@ -83,10 +83,10 @@
 | PAGE-03 | Phase 2 | Pending |
 | PAGE-04 | Phase 2 | Pending |
 | PAGE-05 | Phase 2 | Pending |
-| PAGE-06 | Phase 2 | Pending |
-| PAGE-07 | Phase 2 | Pending |
+| PAGE-06 | Phase 2 | Complete |
+| PAGE-07 | Phase 2 | Complete |
 | DSGN-01 | Phase 1 | Complete |
-| DSGN-02 | Phase 2 | Pending |
+| DSGN-02 | Phase 2 | Complete |
 | DSGN-03 | Phase 2 | Complete |
 | ADMN-01 | Phase 3 | Pending |
 | ADMN-02 | Phase 3 | Pending |
