@@ -7,8 +7,8 @@
 
 ### Pages Publiques
 
-- [ ] **PAGE-01**: Site affiche une page d'accueil avec hero, proposition de valeur, apercu des services et CTA contact
-- [ ] **PAGE-02**: Site affiche une page Mon Histoire avec le parcours personnel d'Antoine sous forme de timeline/storytelling
+- [x] **PAGE-01**: Site affiche une page d'accueil avec hero, proposition de valeur, apercu des services et CTA contact
+- [x] **PAGE-02**: Site affiche une page Mon Histoire avec le parcours personnel d'Antoine sous forme de timeline/storytelling
 - [x] **PAGE-03**: Site affiche une page Mes Services avec description claire de chaque offre (consultation 1:1, coaching groupe, etc.)
 - [x] **PAGE-04**: Site affiche une page Les Programmes listant chaque programme avec duree, contenu, objectifs et public cible
 - [x] **PAGE-05**: Site affiche une page Resultats avec galerie avant/apres incluant temoignage complet (photos, histoire, programme suivi, duree, citation client)
@@ -78,8 +78,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PAGE-01 | Phase 2 | Pending |
-| PAGE-02 | Phase 2 | Pending |
+| PAGE-01 | Phase 2 | Complete |
+| PAGE-02 | Phase 2 | Complete |
 | PAGE-03 | Phase 2 | Complete |
 | PAGE-04 | Phase 2 | Complete |
 | PAGE-05 | Phase 2 | Complete |

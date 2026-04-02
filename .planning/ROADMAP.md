@@ -49,7 +49,7 @@ Plans:
 Plans:
 - [x] 02-01-PLAN.md — Layout shell (Header, Footer, root layout) + shared UI components (ScrollReveal, BeforeAfterSlider, cards)
 - [x] 02-02-PLAN.md — Seed script with realistic French demo data for all Payload collections
-- [ ] 02-03-PLAN.md — Page Accueil (hero + 4 sections) + Page Mon Histoire (timeline)
+- [x] 02-03-PLAN.md — Page Accueil (hero + 4 sections) + Page Mon Histoire (timeline)
 - [x] 02-04-PLAN.md — Page Mes Services + Page Les Programmes + Page Resultats
 - [ ] 02-05-PLAN.md — Visual verification checkpoint (all 5 pages, responsive, navigation)
 **UI hint**: yes
@@ -96,7 +96,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fondation | 2/2 | Complete   | 2026-04-01 |
-| 2. Pages Publiques | 2/5 | In Progress|  |
+| 2. Pages Publiques | 4/5 | In Progress|  |
 | 3. Interface Admin | 0/? | Not started | - |
 | 4. Formulaire de Contact | 0/? | Not started | - |
 | 5. SEO, Conformite & Deploiement | 0/? | Not started | - |
