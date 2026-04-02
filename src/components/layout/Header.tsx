@@ -26,11 +26,8 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const isHeroPage = pathname === '/'
-  const isTransparent = isHeroPage && !scrolled
-
-  const bgClass = isTransparent ? 'bg-transparent' : 'bg-blanc-pur shadow-sm'
-  const textClass = isTransparent ? 'text-blanc-pur' : 'text-bleu-nuit'
+  const bgClass = scrolled ? 'bg-white shadow-sm' : 'bg-white'
+  const textClass = 'text-bleu-nuit'
 
   return (
     <>
@@ -56,10 +53,8 @@ export default function Header() {
                 href={link.href}
                 className={`text-sm font-heading transition-colors ${
                   pathname === link.href
-                    ? 'text-bleu-electrique'
-                    : isTransparent
-                      ? 'text-blanc-pur hover:text-bleu-electrique'
-                      : 'text-bleu-nuit hover:text-bleu-electrique'
+                    ? 'text-bleu-electrique font-semibold'
+                    : 'text-bleu-nav hover:text-bleu-electrique'
                 }`}
                 style={{ transitionDuration: 'var(--transition-fast)' }}
               >
