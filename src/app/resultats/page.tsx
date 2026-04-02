@@ -53,6 +53,7 @@ export default async function ResultatsPage() {
               <ScrollReveal key={resultat.id}>
                 <ResultatCard
                   prenomClient={resultat.prenomClient}
+                  histoire={resultat.histoire}
                   citation={resultat.citation}
                   programmeSuivi={resultat.programmeSuivi}
                   duree={resultat.duree}

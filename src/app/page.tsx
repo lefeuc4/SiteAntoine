@@ -60,6 +60,7 @@ export default async function Home() {
     const photosApres = doc.photosApres as Array<{ photo: { url?: string } }> | undefined
     return {
       prenomClient: doc.prenomClient,
+      histoire: doc.histoire ?? null,
       citation: doc.citation ?? null,
       programmeSuivi: doc.programmeSuivi ?? null,
       duree: doc.duree ?? null,

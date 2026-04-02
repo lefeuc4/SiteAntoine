@@ -1,8 +1,10 @@
 import ScrollReveal from '@/components/ui/ScrollReveal'
 import ResultatCard from '@/components/ui/ResultatCard'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 
 interface ResultatItem {
   prenomClient: string
+  histoire?: SerializedEditorState | null
   citation?: string | null
   programmeSuivi?: string | null
   duree?: string | null
@@ -25,6 +27,7 @@ export default function ResultatsVedette({ resultats }: ResultatsVedetteProps) {
           <ScrollReveal key={i}>
             <ResultatCard
               prenomClient={resultat.prenomClient}
+              histoire={resultat.histoire}
               citation={resultat.citation}
               programmeSuivi={resultat.programmeSuivi}
               duree={resultat.duree}

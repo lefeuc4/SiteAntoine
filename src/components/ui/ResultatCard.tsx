@@ -1,7 +1,10 @@
 import BeforeAfterSlider from '@/components/ui/BeforeAfterSlider'
+import { RichText } from '@payloadcms/richtext-lexical/react'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 
 interface ResultatCardProps {
   prenomClient: string
+  histoire?: SerializedEditorState | null
   citation?: string | null
   programmeSuivi?: string | null
   duree?: string | null
@@ -11,6 +14,7 @@ interface ResultatCardProps {
 
 export default function ResultatCard({
   prenomClient,
+  histoire,
   citation,
   programmeSuivi,
   duree,
@@ -33,16 +37,23 @@ export default function ResultatCard({
         apresAlt={`Photo apres de ${prenomClient}`}
       />
 
-      {/* Citation */}
-      {citation && (
-        <div className="p-4">
+      <div className="p-4">
+        {/* Histoire */}
+        {histoire && (
+          <div className="text-sm font-body text-gris-ardoise mb-3 line-clamp-4">
+            <RichText data={histoire} />
+          </div>
+        )}
+
+        {/* Citation */}
+        {citation && (
           <blockquote className="italic text-base font-body text-bleu-nuit mb-3">
             <span className="text-bleu-electrique text-2xl not-italic">&ldquo;</span>
             {citation}
             <span className="text-bleu-electrique text-2xl not-italic">&rdquo;</span>
           </blockquote>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Meta row */}
       <div className="flex flex-wrap gap-2 text-sm font-body text-gris-ardoise px-4 pb-4">
