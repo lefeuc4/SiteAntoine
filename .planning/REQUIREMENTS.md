@@ -9,9 +9,9 @@
 
 - [ ] **PAGE-01**: Site affiche une page d'accueil avec hero, proposition de valeur, apercu des services et CTA contact
 - [ ] **PAGE-02**: Site affiche une page Mon Histoire avec le parcours personnel d'Antoine sous forme de timeline/storytelling
-- [ ] **PAGE-03**: Site affiche une page Mes Services avec description claire de chaque offre (consultation 1:1, coaching groupe, etc.)
-- [ ] **PAGE-04**: Site affiche une page Les Programmes listant chaque programme avec duree, contenu, objectifs et public cible
-- [ ] **PAGE-05**: Site affiche une page Resultats avec galerie avant/apres incluant temoignage complet (photos, histoire, programme suivi, duree, citation client)
+- [x] **PAGE-03**: Site affiche une page Mes Services avec description claire de chaque offre (consultation 1:1, coaching groupe, etc.)
+- [x] **PAGE-04**: Site affiche une page Les Programmes listant chaque programme avec duree, contenu, objectifs et public cible
+- [x] **PAGE-05**: Site affiche une page Resultats avec galerie avant/apres incluant temoignage complet (photos, histoire, programme suivi, duree, citation client)
 - [x] **PAGE-06**: Navigation claire avec max 5 items, accessible depuis toutes les pages
 - [x] **PAGE-07**: Lien/bouton de contact visible sur chaque page
 
@@ -80,9 +80,9 @@
 |-------------|-------|--------|
 | PAGE-01 | Phase 2 | Pending |
 | PAGE-02 | Phase 2 | Pending |
-| PAGE-03 | Phase 2 | Pending |
-| PAGE-04 | Phase 2 | Pending |
-| PAGE-05 | Phase 2 | Pending |
+| PAGE-03 | Phase 2 | Complete |
+| PAGE-04 | Phase 2 | Complete |
+| PAGE-05 | Phase 2 | Complete |
 | PAGE-06 | Phase 2 | Complete |
 | PAGE-07 | Phase 2 | Complete |
 | DSGN-01 | Phase 1 | Complete |
