@@ -5,10 +5,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 
-interface HeaderProps {
-  transparentOnLoad?: boolean
-}
-
 const navLinks = [
   { href: '/', label: 'Accueil' },
   { href: '/mon-histoire', label: 'Mon Histoire' },
@@ -17,7 +13,7 @@ const navLinks = [
   { href: '/resultats', label: 'Resultats' },
 ]
 
-export default function Header({ transparentOnLoad = false }: HeaderProps) {
+export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
@@ -30,7 +26,8 @@ export default function Header({ transparentOnLoad = false }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const isTransparent = transparentOnLoad && !scrolled
+  const isHeroPage = pathname === '/'
+  const isTransparent = isHeroPage && !scrolled
 
   const bgClass = isTransparent ? 'bg-transparent' : 'bg-blanc-pur shadow-sm'
   const textClass = isTransparent ? 'text-blanc-pur' : 'text-bleu-nuit'
