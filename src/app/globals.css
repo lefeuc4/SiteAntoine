@@ -24,3 +24,13 @@
   --transition-base: 200ms ease;
   --transition-slow: 300ms ease-out;
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
