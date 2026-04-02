@@ -19,7 +19,7 @@
 
 - [x] **DSGN-01**: Nouvelle identite visuelle moderne et coherente (pas les couleurs rose/rouge actuelles)
 - [ ] **DSGN-02**: Design mobile-first responsive sur tous les ecrans (mobile, tablette, desktop)
-- [ ] **DSGN-03**: Chargement de chaque page en moins de 3 secondes
+- [x] **DSGN-03**: Chargement de chaque page en moins de 3 secondes
 
 ### Admin
 
@@ -87,7 +87,7 @@
 | PAGE-07 | Phase 2 | Pending |
 | DSGN-01 | Phase 1 | Complete |
 | DSGN-02 | Phase 2 | Pending |
-| DSGN-03 | Phase 2 | Pending |
+| DSGN-03 | Phase 2 | Complete |
 | ADMN-01 | Phase 3 | Pending |
 | ADMN-02 | Phase 3 | Pending |
 | ADMN-03 | Phase 3 | Pending |
