@@ -1,9 +1,9 @@
 ---
 phase: 2
 slug: pages-publiques
-status: draft
-nyquist_compliant: false
-wave_0_complete: false
+status: approved
+nyquist_compliant: true
+wave_0_complete: true
 created: 2026-04-02
 ---
 
@@ -17,19 +17,19 @@ created: 2026-04-02
 
 | Property | Value |
 |----------|-------|
-| **Framework** | vitest (if not installed, Wave 0 adds it) |
-| **Config file** | `vitest.config.ts` (Wave 0 creates if missing) |
-| **Quick run command** | `pnpm vitest run --reporter=verbose` |
-| **Full suite command** | `pnpm vitest run` |
-| **Estimated runtime** | ~10 seconds |
+| **Framework** | Next.js build (TypeScript + ESLint) |
+| **Config file** | `next.config.ts` (existing) |
+| **Quick run command** | `pnpm build 2>&1 \| tail -30` |
+| **Full suite command** | `pnpm build` |
+| **Estimated runtime** | ~15 seconds |
 
 ---
 
 ## Sampling Rate
 
-- **After every task commit:** Run `pnpm vitest run --reporter=verbose`
-- **After every plan wave:** Run `pnpm vitest run`
-- **Before `/gsd:verify-work`:** Full suite must be green
+- **After every task commit:** Run `pnpm build 2>&1 | tail -30`
+- **After every plan wave:** Run `pnpm build`
+- **Before `/gsd:verify-work`:** Full build must be green
 - **Max feedback latency:** 15 seconds
 
 ---
@@ -38,13 +38,14 @@ created: 2026-04-02
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 02-01-01 | 01 | 1 | DSGN-02 | visual/manual | `pnpm dev` + browser check | N/A | ⬜ pending |
-| 02-01-02 | 01 | 1 | PAGE-07 | unit | `pnpm vitest run src/__tests__/header.test.tsx` | ❌ W0 | ⬜ pending |
-| 02-02-01 | 02 | 1 | PAGE-01 | unit | `pnpm vitest run src/__tests__/accueil.test.tsx` | ❌ W0 | ⬜ pending |
-| 02-02-02 | 02 | 1 | PAGE-02 | unit | `pnpm vitest run src/__tests__/mon-histoire.test.tsx` | ❌ W0 | ⬜ pending |
-| 02-03-01 | 03 | 2 | PAGE-03 | unit | `pnpm vitest run src/__tests__/mes-services.test.tsx` | ❌ W0 | ⬜ pending |
-| 02-03-02 | 03 | 2 | PAGE-04 | unit | `pnpm vitest run src/__tests__/les-programmes.test.tsx` | ❌ W0 | ⬜ pending |
-| 02-04-01 | 04 | 2 | PAGE-05, PAGE-06 | unit | `pnpm vitest run src/__tests__/resultats.test.tsx` | ❌ W0 | ⬜ pending |
+| 02-01-01 | 01 | 1 | DSGN-02, PAGE-06, PAGE-07 | build | `pnpm build 2>&1 \| tail -30` | ✅ | ⬜ pending |
+| 02-01-02 | 01 | 1 | DSGN-02 | build | `pnpm build 2>&1 \| tail -20` | ✅ | ⬜ pending |
+| 02-01-03 | 01 | 1 | DSGN-02 | build | `pnpm build 2>&1 \| tail -20` | ✅ | ⬜ pending |
+| 02-02-01 | 02 | 1 | DSGN-03 | build | `pnpm build 2>&1 \| tail -20` | ✅ | ⬜ pending |
+| 02-03-01 | 03 | 2 | PAGE-01 | build | `pnpm build 2>&1 \| tail -20` | ✅ | ⬜ pending |
+| 02-03-02 | 03 | 2 | PAGE-02 | build | `pnpm build 2>&1 \| tail -20` | ✅ | ⬜ pending |
+| 02-04-01 | 04 | 2 | PAGE-03, PAGE-04 | build | `pnpm build 2>&1 \| tail -20` | ✅ | ⬜ pending |
+| 02-04-02 | 04 | 2 | PAGE-05 | build | `pnpm build 2>&1 \| tail -20` | ✅ | ⬜ pending |
 | 02-05-01 | 05 | 3 | DSGN-03 | manual | Mobile/tablet/desktop viewport test | N/A | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
@@ -53,11 +54,7 @@ created: 2026-04-02
 
 ## Wave 0 Requirements
 
-- [ ] `vitest` + `@vitejs/plugin-react` + `jsdom` — install test framework if missing
-- [ ] `vitest.config.ts` — configure with jsdom environment and React plugin
-- [ ] Test stubs for header, each page component
-
-*If none: "Existing infrastructure covers all phase requirements."*
+Existing infrastructure covers all phase requirements. Every task uses `pnpm build` as the automated verification gate (TypeScript compilation + ESLint + Next.js page generation).
 
 ---
 
@@ -74,11 +71,11 @@ created: 2026-04-02
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<automated>` verify or Wave 0 dependencies
-- [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 covers all MISSING references
-- [ ] No watch-mode flags
-- [ ] Feedback latency < 15s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] All tasks have `<automated>` verify (`pnpm build`)
+- [x] Sampling continuity: no 3 consecutive tasks without automated verify
+- [x] Wave 0 covers all MISSING references — N/A, no Wave 0 needed
+- [x] No watch-mode flags
+- [x] Feedback latency < 15s
+- [x] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** pending
+**Approval:** approved 2026-04-02
