@@ -45,7 +45,13 @@ Plans:
   3. La page Resultats affiche une galerie avant/apres avec temoignages complets (photos, histoire, programme suivi, duree, citation client) en se basant sur les donnees Payload
   4. Chaque page affiche un lien/bouton de contact persistent (header ou footer)
   5. Chaque page charge en moins de 3 secondes sur connexion mobile et le layout est correct sur mobile, tablette et desktop
-**Plans**: TBD
+**Plans**: 5 plans
+Plans:
+- [ ] 02-01-PLAN.md — Layout shell (Header, Footer, root layout) + shared UI components (ScrollReveal, BeforeAfterSlider, cards)
+- [ ] 02-02-PLAN.md — Seed script with realistic French demo data for all Payload collections
+- [ ] 02-03-PLAN.md — Page Accueil (hero + 4 sections) + Page Mon Histoire (timeline)
+- [ ] 02-04-PLAN.md — Page Mes Services + Page Les Programmes + Page Resultats
+- [ ] 02-05-PLAN.md — Visual verification checkpoint (all 5 pages, responsive, navigation)
 **UI hint**: yes
 
 ### Phase 3: Interface Admin
@@ -90,7 +96,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fondation | 2/2 | Complete   | 2026-04-01 |
-| 2. Pages Publiques | 0/? | Not started | - |
+| 2. Pages Publiques | 0/5 | Not started | - |
 | 3. Interface Admin | 0/? | Not started | - |
 | 4. Formulaire de Contact | 0/? | Not started | - |
 | 5. SEO, Conformite & Deploiement | 0/? | Not started | - |
