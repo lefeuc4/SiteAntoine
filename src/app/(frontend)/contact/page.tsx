@@ -6,7 +6,18 @@ import WhatsAppBlock from '@/components/sections/WhatsAppBlock'
 import SocialBlock from '@/components/sections/SocialBlock'
 
 export const metadata: Metadata = {
-  title: 'Contact — Antoine Profit, Coach Bien-Etre',
+  title: 'Contact',
+  description:
+    'Contactez Antoine Profit, coach bien-etre. Formulaire de contact et lien WhatsApp pour demarrer votre transformation.',
+  openGraph: {
+    title: 'Contact — Antoine Profit',
+    description:
+      'Contactez Antoine Profit, coach bien-etre. Formulaire de contact et lien WhatsApp pour demarrer votre transformation.',
+    url: '/contact',
+    siteName: 'Antoine Profit — Coach Bien-Etre',
+    locale: 'fr_FR',
+    type: 'website',
+  },
 }
 
 export default async function ContactPage() {

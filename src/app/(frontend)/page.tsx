@@ -9,8 +9,18 @@ import CTABandeau from '@/components/sections/CTABandeau'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Antoine Profit — Coach Bien-Etre',
-  description: 'Coaching bien-etre, nutrition et transformation physique avec Antoine Profit',
+  title: { absolute: 'Antoine Profit — Coach Bien-Etre' },
+  description:
+    'Antoine Profit, coach bien-etre. Transformez votre sante et retrouvez votre energie avec un accompagnement personnalise.',
+  openGraph: {
+    title: 'Antoine Profit — Coach Bien-Etre',
+    description:
+      'Antoine Profit, coach bien-etre. Transformez votre sante et retrouvez votre energie avec un accompagnement personnalise.',
+    url: '/',
+    siteName: 'Antoine Profit — Coach Bien-Etre',
+    locale: 'fr_FR',
+    type: 'website',
+  },
 }
 
 function extractPlainText(contenu: unknown): string {

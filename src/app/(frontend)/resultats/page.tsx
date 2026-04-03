@@ -5,7 +5,18 @@ import ResultatCard from '@/components/ui/ResultatCard'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Resultats — Antoine Profit',
+  title: 'Resultats',
+  description:
+    "Resultats concrets de clients d'Antoine Profit. Transformations avant/apres avec temoignages authentiques.",
+  openGraph: {
+    title: 'Resultats — Antoine Profit',
+    description:
+      "Resultats concrets de clients d'Antoine Profit. Transformations avant/apres avec temoignages authentiques.",
+    url: '/resultats',
+    siteName: 'Antoine Profit — Coach Bien-Etre',
+    locale: 'fr_FR',
+    type: 'website',
+  },
 }
 
 export default async function ResultatsPage() {

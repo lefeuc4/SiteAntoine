@@ -6,7 +6,18 @@ import ServiceCard from '@/components/ui/ServiceCard'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Services de Coaching — Antoine Profit',
+  title: 'Services de Coaching',
+  description:
+    "Coaching individuel, coaching groupe, consultation nutrition — decouvrez les services d'Antoine Profit, coach bien-etre.",
+  openGraph: {
+    title: 'Services de Coaching — Antoine Profit',
+    description:
+      "Coaching individuel, coaching groupe, consultation nutrition — decouvrez les services d'Antoine Profit, coach bien-etre.",
+    url: '/services',
+    siteName: 'Antoine Profit — Coach Bien-Etre',
+    locale: 'fr_FR',
+    type: 'website',
+  },
 }
 
 const iconByIndex: Record<number, string> = {

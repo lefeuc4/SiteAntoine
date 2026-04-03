@@ -5,7 +5,18 @@ import ProgrammeCard from '@/components/ui/ProgrammeCard'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Programmes de Coaching — Antoine Profit',
+  title: 'Programmes de Coaching',
+  description:
+    "Programmes de coaching bien-etre adaptes a vos objectifs. Decouvrez les formules d'accompagnement d'Antoine Profit.",
+  openGraph: {
+    title: 'Programmes de Coaching — Antoine Profit',
+    description:
+      "Programmes de coaching bien-etre adaptes a vos objectifs. Decouvrez les formules d'accompagnement d'Antoine Profit.",
+    url: '/programmes',
+    siteName: 'Antoine Profit — Coach Bien-Etre',
+    locale: 'fr_FR',
+    type: 'website',
+  },
 }
 
 export default async function ProgrammesPage() {

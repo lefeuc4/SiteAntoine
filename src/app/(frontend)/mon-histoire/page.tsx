@@ -4,8 +4,18 @@ import config from '@/payload.config'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Mon Histoire — Antoine Profit',
-  description: "Decouvrez le parcours personnel d'Antoine Profit, coach bien-etre",
+  title: 'Mon Histoire',
+  description:
+    "Decouvrez le parcours d'Antoine Profit, coach bien-etre passionne par la transformation physique et mentale.",
+  openGraph: {
+    title: 'Mon Histoire — Antoine Profit',
+    description:
+      "Decouvrez le parcours d'Antoine Profit, coach bien-etre passionne par la transformation physique et mentale.",
+    url: '/mon-histoire',
+    siteName: 'Antoine Profit — Coach Bien-Etre',
+    locale: 'fr_FR',
+    type: 'website',
+  },
 }
 
 function extractPlainText(contenu: unknown): string {

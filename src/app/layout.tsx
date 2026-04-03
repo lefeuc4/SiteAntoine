@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Montserrat, Inter } from 'next/font/google'
 import React from 'react'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const montserrat = Montserrat({
@@ -18,7 +19,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Antoine Profit - Coach Bien-Etre',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://antoineprofit.com'),
+  title: {
+    default: 'Antoine Profit — Coach Bien-Etre',
+    template: '%s | Antoine Profit',
+  },
   description: 'Coaching bien-etre, nutrition et transformation physique avec Antoine Profit',
 }
 
@@ -27,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" className={`${montserrat.variable} ${inter.variable}`}>
       <body className="font-body bg-blanc-pur text-bleu-nuit">
         {children}
+        <Analytics />
       </body>
     </html>
   )
