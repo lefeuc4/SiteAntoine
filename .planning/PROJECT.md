@@ -24,9 +24,9 @@ Antoine peut mettre a jour son site (textes, images, programmes, resultats) de m
 - [ ] Page Les Programmes : liste de programmes avec details (duree, contenu, objectifs)
 - [ ] Page Resultats : galerie avant/apres avec temoignage complet (photos, histoire, programme suivi, duree, citation)
 - [ ] Formulaire de contact (email / WhatsApp)
-- [ ] Interface admin : editer les textes et images de chaque page
-- [ ] Interface admin : creer/modifier/supprimer des programmes
-- [ ] Interface admin : creer/modifier/supprimer des resultats avant/apres
+- [x] Interface admin : editer les textes et images de chaque page — Validated in Phase 3: Interface Admin
+- [x] Interface admin : creer/modifier/supprimer des programmes — Validated in Phase 3: Interface Admin
+- [x] Interface admin : creer/modifier/supprimer des resultats avant/apres — Validated in Phase 3: Interface Admin
 
 - [ ] Site responsive (mobile-first)
 - [ ] Performance : chargement rapide, pas de plugins lourds
@@ -83,4 +83,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-02 after Phase 2 (Pages Publiques) complete — 5 public pages live with Payload CMS data, responsive layout, bleu-nav header*
+*Last updated: 2026-04-03 after Phase 3 (Interface Admin) complete — admin fully French, dashboard widget, restricted Lexical editor, upload working via Vercel Blob*
