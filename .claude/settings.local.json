@@ -46,7 +46,8 @@
       "Read(//home/lefeuc4/.claude/get-shit-done/templates/**)",
       "Bash(cat /home/lefeuc4/claude/SiteAntoine/.planning/phases/03-interface-admin/*-VERIFICATION.md)",
       "Bash(grep:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(git merge:*)"
     ]
   }
 }
