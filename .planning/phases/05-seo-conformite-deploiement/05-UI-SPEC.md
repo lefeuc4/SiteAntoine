@@ -59,7 +59,7 @@ Source: `src/app/globals.css` — all four roles already declared. No additions 
 
 Phase 5 typography notes:
 - Cookie banner text: 14px (label role), weight 400
-- Cookie banner buttons: 14px (label role), weight 600 (semibold)
+- Cookie banner buttons: 14px (label role), weight 700 (bold)
 - Mentions legales page headings: 28px (heading role), weight 700
 - Mentions legales page body: 16px (body role), weight 400
 
@@ -92,6 +92,8 @@ Additional color notes:
 ### CookieBanner
 
 A persistent bottom bar, client component using localStorage to track consent state.
+
+**Primary focal point:** "Accepter" button (filled vert-energie) draws the eye first; "Refuser" is visually subordinate (ghost style).
 
 **Layout:**
 - Fixed to bottom of viewport: `position: fixed; bottom: 0; left: 0; right: 0; z-index: 50`
