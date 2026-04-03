@@ -94,7 +94,12 @@ Plans:
   3. Chaque page publique dispose de meta tags, titre et structure HTML semantique corrects (verifiable via les outils developpeur)
   4. Un bandeau cookies RGPD s'affiche au premier chargement et une page Mentions Legales est accessible
   5. Le champ de consentement CNIL est present et obligatoire dans l'admin pour chaque photo client
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — SEO metadata enrichment (metadataBase, OpenGraph, descriptions) + sitemap + robots + WordPress 301 redirects + @vercel/analytics
+- [ ] 05-02-PLAN.md — RGPD compliance: CookieBanner component + MentionsLegales Payload Global + /mentions-legales page
+- [ ] 05-03-PLAN.md — Vercel deployment with custom domain antoineprofit.com, env vars, DNS configuration
+**UI hint**: yes
 
 ## Progress
 
@@ -107,4 +112,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. Pages Publiques | 4/5 | In Progress|  |
 | 3. Interface Admin | 1/2 | In Progress|  |
 | 4. Formulaire de Contact | 2/2 | Complete   | 2026-04-03 |
-| 5. SEO, Conformite & Deploiement | 0/? | Not started | - |
+| 5. SEO, Conformite & Deploiement | 0/3 | Not started | - |
