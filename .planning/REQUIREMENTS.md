@@ -23,11 +23,11 @@
 
 ### Admin
 
-- [ ] **ADMN-01**: Interface admin protegee par authentification (login/password)
-- [ ] **ADMN-02**: Admin peut editer les textes et images de chaque page publique
-- [ ] **ADMN-03**: Admin peut creer, modifier et supprimer des programmes (titre, description, duree, contenu, objectifs, public cible)
-- [ ] **ADMN-04**: Admin peut creer, modifier et supprimer des resultats avant/apres (photos avant, photos apres, prenom client, histoire, programme suivi, duree, citation)
-- [ ] **ADMN-05**: Images uploadees sont automatiquement compressees en WebP
+- [x] **ADMN-01**: Interface admin protegee par authentification (login/password)
+- [x] **ADMN-02**: Admin peut editer les textes et images de chaque page publique
+- [x] **ADMN-03**: Admin peut creer, modifier et supprimer des programmes (titre, description, duree, contenu, objectifs, public cible)
+- [x] **ADMN-04**: Admin peut creer, modifier et supprimer des resultats avant/apres (photos avant, photos apres, prenom client, histoire, programme suivi, duree, citation)
+- [x] **ADMN-05**: Images uploadees sont automatiquement compressees en WebP
 
 ### Contact
 
@@ -88,11 +88,11 @@
 | DSGN-01 | Phase 1 | Complete |
 | DSGN-02 | Phase 2 | Complete |
 | DSGN-03 | Phase 2 | Complete |
-| ADMN-01 | Phase 3 | Pending |
-| ADMN-02 | Phase 3 | Pending |
-| ADMN-03 | Phase 3 | Pending |
-| ADMN-04 | Phase 3 | Pending |
-| ADMN-05 | Phase 3 | Pending |
+| ADMN-01 | Phase 3 | Complete |
+| ADMN-02 | Phase 3 | Complete |
+| ADMN-03 | Phase 3 | Complete |
+| ADMN-04 | Phase 3 | Complete |
+| ADMN-05 | Phase 3 | Complete |
 | CTCT-01 | Phase 4 | Pending |
 | CTCT-02 | Phase 4 | Pending |
 | SEO-01 | Phase 5 | Pending |

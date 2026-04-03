@@ -22,7 +22,7 @@ decisions:
 metrics:
   duration: "5 minutes"
   completed: "2026-04-03"
-  tasks_completed: 1
+  tasks_completed: 2
   files_modified: 2
 ---
 
@@ -30,7 +30,7 @@ metrics:
 
 **One-liner:** Custom RSC dashboard widget with dynamic programme/resultat counters and French quick-action CRUD links registered via Payload beforeDashboard slot.
 
-**Status: PARTIAL — Task 2 (human-verify checkpoint) pending**
+**Status: COMPLETE — All tasks done, admin verified by user**
 
 ## Tasks Completed
 
@@ -56,18 +56,18 @@ metrics:
 
 ## Deviations from Plan
 
-None — plan executed exactly as written for Task 1.
+- **Layout restructure (Rule 1 auto-fix):** Root layout wrapped all routes including /admin in `<html>/<body>/<Header>/<main>`, causing nested HTML documents with Payload's own `<html>/<body>`. Fixed by moving public pages into `(frontend)` route group with its own layout, making root layout a minimal `children`-only shell. Commit: 4e43398.
 
 ## Known Stubs
 
 None — counter values are dynamic (payload.count), links point to real admin routes.
 
-## Pending: Task 2 (checkpoint:human-verify)
+## Task 2: Admin Verification (human-verify)
 
-Task 2 requires manual admin walkthrough of 11 verification points including:
+All 11 verification points approved by user:
 - Login page in French
-- Dashboard widget rendering with counters and quick-action links
-- Sidebar collection groups
+- Dashboard widget with counters and quick-action links
+- Sidebar collection groups under "Contenu"
 - Field labels in French on all collections
 - Restricted Lexical editor toolbar
 - PageContent access control (no create/delete)

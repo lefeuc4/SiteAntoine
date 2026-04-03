@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-interface-admin-01-PLAN.md
-last_updated: "2026-04-03T01:04:45.534Z"
+stopped_at: "Checkpoint 03-02 Task 2: human-verify pending"
+last_updated: "2026-04-03T01:09:02.115Z"
 last_activity: 2026-04-03
 progress:
   total_phases: 5
@@ -82,6 +82,7 @@ Recent decisions affecting current work:
 - [Phase 02-pages-publiques]: richText plain text extracted with inline helper accessing root.children[0].children[0].text — avoids importing full Lexical renderer for apercu text
 - [Phase 03-interface-admin]: defaultSort not valid in CollectionAdminOptions (Payload 3.81.0) — removed from PageContent admin config
 - [Phase 03-interface-admin]: overrideAccess: true required on all seed page-content operations after access.create/delete: () => false restrictions
+- [Phase 03-interface-admin]: DashboardWidget uses Payload CSS variables with #10B981 fallback — inherits admin theme without coupling to specific colors
 
 ### Pending Todos
 
@@ -95,6 +96,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T01:04:45.531Z
-Stopped at: Completed 03-interface-admin-01-PLAN.md
+Last session: 2026-04-03T01:08:52.164Z
+Stopped at: Checkpoint 03-02 Task 2: human-verify pending
 Resume file: None

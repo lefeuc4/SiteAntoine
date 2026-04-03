@@ -67,7 +67,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 03-01-PLAN.md — Payload config (i18n French, Lexical restriction, upload limit) + all collection French labels, descriptions, access control, sidebar groups + seed fix
-- [ ] 03-02-PLAN.md — Custom dashboard widget (counters + quick-action links) + admin visual verification
+- [x] 03-02-PLAN.md — Custom dashboard widget (counters + quick-action links) + admin visual verification
 **UI hint**: yes
 
 ### Phase 4: Formulaire de Contact
