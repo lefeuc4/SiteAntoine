@@ -61,10 +61,12 @@ Exceptions:
 
 Typography for the **DashboardWidget** only. Admin panel body typography is Payload's own.
 
+Weights used: 600 (semibold) + 700 (bold) — exactly 2 weights.
+
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
 | Counter number | 32px (2rem) | 700 (bold) | 1.2 | Programme/resultat count — the most prominent element |
-| Counter label | 14px (0.875rem) | 400 (regular) | 1.4 | "Programmes", "Resultats avant/apres", "Pages a editer" |
+| Counter label | 14px (0.875rem) | 600 (semibold) | 1.4 | "Programmes", "Resultats avant/apres", "Pages a editer" |
 | Quick-action link | 14px (0.875rem) | 600 (semibold) | 1.4 | "+ Ajouter", "Modifier" — clickable labels inside counter cards |
 | Widget heading | 20px (1.25rem) | 600 (semibold) | 1.3 | "Bienvenue, Antoine" — optional greeting above counters |
 
