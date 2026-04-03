@@ -93,7 +93,9 @@ metrics:
 
 ## Deviations from Plan
 
-None — plan executed exactly as written. Component implementations match UI-SPEC and plan action code exactly.
+- **Zod downgraded to 3.23.8** — Agent installed Zod 4.x but @hookform/resolvers requires Zod 3. Also downgraded @hookform/resolvers from 5.x to 3.10.0.
+- **contactSchema extracted to shared module** — Moved from `'use server'` file to `src/lib/contactSchema.ts` to avoid serialization across server/client boundary (zodResolver received a plain object instead of a Zod schema).
+- **HTML/body tags moved to root layout** — Next.js requires `<html>` and `<body>` in root `src/app/layout.tsx`, not in route group layouts.
 
 ## Known Stubs
 
