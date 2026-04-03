@@ -57,7 +57,7 @@ Sourced from `src/app/globals.css` @theme tokens. No new sizes introduced.
 | Role | Size | Weight | Line Height | Font |
 |------|------|--------|-------------|------|
 | Body | 16px (--font-size-base, 1rem) | 400 (regular) | 1.5 | Inter (--font-body) |
-| Label | 14px (--font-size-sm, 0.875rem) | 600 (semibold) | 1.4 | Inter (--font-body) |
+| Label | 14px (--font-size-sm, 0.875rem) | 700 (bold) | 1.4 | Inter (--font-body) |
 | Heading | 28px (--font-size-xl, 1.75rem) | 700 (bold) | 1.2 | Montserrat (--font-heading) |
 | Display | 36px (--font-size-4xl, 2.25rem) | 700 (bold) | 1.2 | Montserrat (--font-heading) |
 
@@ -109,7 +109,7 @@ Structure (top to bottom):
 **Submit button:** full-width, bg-bleu-electrique, rounded-full, px-8 py-4, font-heading text-sm, "Envoyer mon message". Loading state: spinner icon (lucide `Loader2` animated) + "Envoi en cours..." label, button disabled.
 
 **Field styling:**
-- Label: text-sm font-semibold text-bleu-nuit, mb-1
+- Label: text-sm font-bold text-bleu-nuit, mb-1
 - Input/textarea: w-full border border-gris-ardoise/40 rounded-lg px-4 py-3 text-base text-bleu-nuit bg-blanc-pur focus:outline-none focus:ring-2 focus:ring-bleu-electrique focus:border-bleu-electrique transition-all (--transition-fast)
 - Error state: border-rouge-erreur focus:ring-rouge-erreur, error message text-sm text-rouge-erreur mt-1
 
@@ -132,7 +132,7 @@ Container: bg-vert-energie/10 (10% opacity green tint) rounded-xl p-6, flex item
 
 Content:
 - lucide `MessageCircle` icon (24px, color #10B981) — WhatsApp brand icon approximation; no external SVG imports
-- Text column: heading text-sm font-semibold text-bleu-nuit "Preferer WhatsApp ?", body text-sm text-gris-ardoise "Repondez directement en message prive."
+- Text column: heading text-sm font-bold text-bleu-nuit "Preferer WhatsApp ?", body text-sm text-gris-ardoise "Repondez directement en message prive."
 - CTA link: `<a href="https://wa.me/{number}?text={encoded_message}">` — renders as pill button, bg-vert-energie text-blanc-pur rounded-full px-5 py-2 text-sm font-heading hover:brightness-110 transition (--transition-fast). Label: "Ouvrir WhatsApp"
 
 Number and pre-filled message sourced from Payload Global ContactSettings at render time.
