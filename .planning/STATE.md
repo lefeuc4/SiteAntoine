@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 4 UI-SPEC approved
-last_updated: "2026-04-03T12:19:39.401Z"
-last_activity: 2026-04-03 -- Phase 04 execution started
+stopped_at: "Completed 04-02-PLAN.md (checkpoint:human-verify Task 3)"
+last_updated: "2026-04-03T12:27:53.711Z"
+last_activity: 2026-04-03
 progress:
   total_phases: 5
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 11
-  completed_plans: 9
+  completed_plans: 11
   percent: 0
 ---
 
@@ -26,9 +26,9 @@ See: .planning/PROJECT.md (updated 2026-04-01)
 ## Current Position
 
 Phase: 04 (formulaire-de-contact) — EXECUTING
-Plan: 1 of 2
-Status: Executing Phase 04
-Last activity: 2026-04-03 -- Phase 04 execution started
+Plan: 2 of 2
+Status: Ready to execute
+Last activity: 2026-04-03
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -59,6 +59,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 02-pages-publiques P04 | 8min | 2 tasks | 3 files |
 | Phase 02-pages-publiques P03 | 3min | 2 tasks | 7 files |
 | Phase 03-interface-admin P01 | 4min | 2 tasks | 7 files |
+| Phase 04-formulaire-de-contact P02 | 2min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,9 @@ Recent decisions affecting current work:
 - [Phase 03-interface-admin]: defaultSort not valid in CollectionAdminOptions (Payload 3.81.0) — removed from PageContent admin config
 - [Phase 03-interface-admin]: overrideAccess: true required on all seed page-content operations after access.create/delete: () => false restrictions
 - [Phase 03-interface-admin]: DashboardWidget uses Payload CSS variables with #10B981 fallback — inherits admin theme without coupling to specific colors
+- [Phase 04-formulaire-de-contact]: Async frontend layout fetches ContactSettings once for FloatingWhatsApp on all public pages
+- [Phase 04-formulaire-de-contact]: Honeypot uses position:absolute + opacity:0 (not display:none) to remain detectable to bots
+- [Phase 04-formulaire-de-contact]: SocialBlock returns null when both social URLs are empty — clean conditional rendering
 
 ### Pending Todos
 
@@ -96,6 +100,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T11:09:57.462Z
-Stopped at: Phase 4 UI-SPEC approved
-Resume file: .planning/phases/04-formulaire-de-contact/04-UI-SPEC.md
+Last session: 2026-04-03T12:27:53.709Z
+Stopped at: Completed 04-02-PLAN.md (checkpoint:human-verify Task 3)
+Resume file: None

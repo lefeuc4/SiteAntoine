@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Fondation** - Bootstrap du projet, modeles de donnees Payload, Docker Compose local (completed 2026-04-01)
 - [ ] **Phase 2: Pages Publiques** - Les 5 pages du site vitrine, design system, navigation responsive
 - [ ] **Phase 3: Interface Admin** - CRUD programmes et resultats, edition de contenu, upload images WebP
-- [ ] **Phase 4: Formulaire de Contact** - Formulaire email + lien WhatsApp, livraison Resend, anti-spam
+- [x] **Phase 4: Formulaire de Contact** - Formulaire email + lien WhatsApp, livraison Resend, anti-spam (completed 2026-04-03)
 - [ ] **Phase 5: SEO, Conformite & Deploiement** - SEO, RGPD/CNIL, redirections 301, Vercel production, HTTPS
 
 ## Phase Details
@@ -80,8 +80,8 @@ Plans:
   3. Une tentative de spam via le formulaire est bloquee silencieusement (honeypot actif)
 **Plans**: 2 plans
 Plans:
-- [ ] 04-01-PLAN.md — Install dependencies (resend, react-hook-form, zod), ContactSettings Payload Global, Server Action for email via Resend
-- [ ] 04-02-PLAN.md — ContactForm + WhatsAppBlock + SocialBlock components, /contact page, FloatingWhatsApp in layout
+- [x] 04-01-PLAN.md — Install dependencies (resend, react-hook-form, zod), ContactSettings Payload Global, Server Action for email via Resend
+- [x] 04-02-PLAN.md — ContactForm + WhatsAppBlock + SocialBlock components, /contact page, FloatingWhatsApp in layout
 **UI hint**: yes
 
 ### Phase 5: SEO, Conformite & Deploiement
@@ -106,5 +106,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Fondation | 2/2 | Complete   | 2026-04-01 |
 | 2. Pages Publiques | 4/5 | In Progress|  |
 | 3. Interface Admin | 1/2 | In Progress|  |
-| 4. Formulaire de Contact | 0/2 | Planned    |  |
+| 4. Formulaire de Contact | 2/2 | Complete   | 2026-04-03 |
 | 5. SEO, Conformite & Deploiement | 0/? | Not started | - |
