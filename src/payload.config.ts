@@ -25,6 +25,11 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   secret: process.env.PAYLOAD_SECRET!,
+  admin: {
+    components: {
+      beforeDashboard: ['@/components/admin/DashboardWidget'],
+    },
+  },
   i18n: {
     fallbackLanguage: 'fr',
     supportedLanguages: { fr },
