@@ -4,7 +4,16 @@ import sharp from 'sharp'
 import { buildConfig } from 'payload'
 import { postgresAdapter } from '@payloadcms/db-postgres'
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
-import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { fr } from '@payloadcms/translations/languages/fr'
+import {
+  lexicalEditor,
+  BoldFeature,
+  ItalicFeature,
+  UnorderedListFeature,
+  OrderedListFeature,
+  LinkFeature,
+  FixedToolbarFeature,
+} from '@payloadcms/richtext-lexical'
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Programmes } from './collections/Programmes'
@@ -16,7 +25,20 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   secret: process.env.PAYLOAD_SECRET!,
-  editor: lexicalEditor(),
+  i18n: {
+    fallbackLanguage: 'fr',
+    supportedLanguages: { fr },
+  },
+  editor: lexicalEditor({
+    features: [
+      BoldFeature(),
+      ItalicFeature(),
+      UnorderedListFeature(),
+      OrderedListFeature(),
+      LinkFeature(),
+      FixedToolbarFeature(),
+    ],
+  }),
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URI!,
@@ -32,6 +54,11 @@ export default buildConfig({
       clientUploads: true, // REQUIRED on Vercel — server limit 4.5 MB
     }),
   ],
+  upload: {
+    limits: {
+      fileSize: 5_000_000, // 5 MB — server-side only, clientUploads bypasses this (Payload #12671)
+    },
+  },
   collections: [Users, Media, Programmes, Resultats, PageContent],
   sharp,
   typescript: {
