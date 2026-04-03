@@ -56,7 +56,8 @@ export default buildConfig({
         media: true,
       },
       token: process.env.BLOB_READ_WRITE_TOKEN!,
-      clientUploads: true, // REQUIRED on Vercel — server limit 4.5 MB
+      clientUploads: process.env.NODE_ENV === 'production', // Only on Vercel — bypasses 4.5 MB serverless limit; in dev, server-side upload works fine
+      addRandomSuffix: true,
     }),
   ],
   upload: {
