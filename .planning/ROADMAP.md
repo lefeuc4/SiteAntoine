@@ -106,5 +106,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Fondation | 2/2 | Complete   | 2026-04-01 |
 | 2. Pages Publiques | 4/5 | In Progress|  |
 | 3. Interface Admin | 1/2 | In Progress|  |
-| 4. Formulaire de Contact | 0/2 | Not started | - |
+| 4. Formulaire de Contact | 0/2 | Planned    |  |
 | 5. SEO, Conformite & Deploiement | 0/? | Not started | - |

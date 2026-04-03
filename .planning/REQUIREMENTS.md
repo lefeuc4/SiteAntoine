@@ -31,8 +31,8 @@
 
 ### Contact
 
-- [ ] **CTCT-01**: Formulaire de contact fonctionnel (nom, email, message) avec envoi par email
-- [ ] **CTCT-02**: Lien WhatsApp accessible depuis le site
+- [x] **CTCT-01**: Formulaire de contact fonctionnel (nom, email, message) avec envoi par email
+- [x] **CTCT-02**: Lien WhatsApp accessible depuis le site
 
 ### SEO & Conformite
 
@@ -93,8 +93,8 @@
 | ADMN-03 | Phase 3 | Complete |
 | ADMN-04 | Phase 3 | Complete |
 | ADMN-05 | Phase 3 | Complete |
-| CTCT-01 | Phase 4 | Pending |
-| CTCT-02 | Phase 4 | Pending |
+| CTCT-01 | Phase 4 | Complete |
+| CTCT-02 | Phase 4 | Complete |
 | SEO-01 | Phase 5 | Pending |
 | SEO-02 | Phase 5 | Pending |
 | LGAL-01 | Phase 5 | Pending |
