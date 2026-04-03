@@ -112,4 +112,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. Pages Publiques | 4/5 | In Progress|  |
 | 3. Interface Admin | 1/2 | In Progress|  |
 | 4. Formulaire de Contact | 2/2 | Complete   | 2026-04-03 |
-| 5. SEO, Conformite & Deploiement | 0/3 | Not started | - |
+| 5. SEO, Conformite & Deploiement | 0/3 | Planned    |  |

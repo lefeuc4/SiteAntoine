@@ -36,11 +36,11 @@
 
 ### SEO & Conformite
 
-- [ ] **SEO-01**: Meta tags, titres et structure HTML semantique sur chaque page
-- [ ] **SEO-02**: Redirections 301 depuis les anciennes URLs WordPress vers les nouvelles pages
+- [x] **SEO-01**: Meta tags, titres et structure HTML semantique sur chaque page
+- [x] **SEO-02**: Redirections 301 depuis les anciennes URLs WordPress vers les nouvelles pages
 - [ ] **LGAL-01**: Bandeau cookies conforme RGPD
 - [ ] **LGAL-02**: Page mentions legales
-- [ ] **LGAL-03**: Champ de consentement dans l'admin pour chaque photo client (conformite CNIL)
+- [x] **LGAL-03**: Champ de consentement dans l'admin pour chaque photo client (conformite CNIL)
 
 ### Deploiement
 
@@ -95,11 +95,11 @@
 | ADMN-05 | Phase 3 | Complete |
 | CTCT-01 | Phase 4 | Complete |
 | CTCT-02 | Phase 4 | Complete |
-| SEO-01 | Phase 5 | Pending |
-| SEO-02 | Phase 5 | Pending |
+| SEO-01 | Phase 5 | Complete |
+| SEO-02 | Phase 5 | Complete |
 | LGAL-01 | Phase 5 | Pending |
 | LGAL-02 | Phase 5 | Pending |
-| LGAL-03 | Phase 5 | Pending |
+| LGAL-03 | Phase 5 | Complete |
 | DPLY-01 | Phase 1 | Complete |
 | DPLY-02 | Phase 5 | Pending |
 

@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 5 context gathered
-last_updated: "2026-04-03T13:45:50.908Z"
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-04-03T14:23:24.949Z"
 last_activity: 2026-04-03
 progress:
   total_phases: 5
   completed_phases: 4
-  total_plans: 11
+  total_plans: 14
   completed_plans: 11
   percent: 0
 ---
@@ -60,6 +60,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 02-pages-publiques P03 | 3min | 2 tasks | 7 files |
 | Phase 03-interface-admin P01 | 4min | 2 tasks | 7 files |
 | Phase 04-formulaire-de-contact P02 | 2min | 2 tasks | 6 files |
+| Phase 05 P01 | 3min | 2 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -87,6 +88,8 @@ Recent decisions affecting current work:
 - [Phase 04-formulaire-de-contact]: Async frontend layout fetches ContactSettings once for FloatingWhatsApp on all public pages
 - [Phase 04-formulaire-de-contact]: Honeypot uses position:absolute + opacity:0 (not display:none) to remain detectable to bots
 - [Phase 04-formulaire-de-contact]: SocialBlock returns null when both social URLs are empty — clean conditional rendering
+- [Phase 05]: metadataBase uses NEXT_PUBLIC_SERVER_URL with antoineprofit.com fallback for consistent OpenGraph URL resolution
+- [Phase 05]: robots.ts disallows /admin only (not /api) — Payload API endpoints must remain accessible
 
 ### Pending Todos
 
@@ -100,6 +103,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T13:45:50.906Z
-Stopped at: Phase 5 context gathered
-Resume file: .planning/phases/05-seo-conformite-deploiement/05-CONTEXT.md
+Last session: 2026-04-03T14:23:24.947Z
+Stopped at: Completed 05-01-PLAN.md
+Resume file: None
