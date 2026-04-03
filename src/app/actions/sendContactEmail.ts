@@ -1,18 +1,9 @@
 'use server'
 
 import { Resend } from 'resend'
-import { z } from 'zod'
+import { contactSchema, type ContactFormValues } from '@/lib/contactSchema'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
-
-export const contactSchema = z.object({
-  nom: z.string().min(2, 'Veuillez indiquer votre nom.').max(100),
-  email: z.string().email('Veuillez saisir une adresse email valide.'),
-  message: z.string().min(10, 'Veuillez ecrire votre message.').max(2000),
-  website: z.string().max(0),
-})
-
-export type ContactFormValues = z.infer<typeof contactSchema>
 
 export type ContactFormState =
   | { status: 'idle' }

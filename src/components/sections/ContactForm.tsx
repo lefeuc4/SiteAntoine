@@ -4,8 +4,8 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from 'react'
 import { Loader2, CheckCircle } from 'lucide-react'
-import { contactSchema, sendContactEmail } from '@/app/actions/sendContactEmail'
-import type { ContactFormValues } from '@/app/actions/sendContactEmail'
+import { contactSchema, type ContactFormValues } from '@/lib/contactSchema'
+import { sendContactEmail } from '@/app/actions/sendContactEmail'
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
