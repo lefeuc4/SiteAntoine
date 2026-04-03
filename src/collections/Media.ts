@@ -2,8 +2,16 @@ import type { CollectionConfig } from 'payload'
 
 export const Media: CollectionConfig = {
   slug: 'media',
+  labels: {
+    singular: 'Media',
+    plural: 'Medias',
+  },
   access: {
     read: () => true,
+  },
+  admin: {
+    description: "Bibliotheque d'images. Taille maximale : 5 MB. Formats acceptes : JPEG, PNG, WebP.",
+    group: 'Contenu',
   },
   upload: {
     mimeTypes: ['image/jpeg', 'image/png', 'image/webp'],
@@ -28,5 +36,14 @@ export const Media: CollectionConfig = {
       },
     ],
   },
-  fields: [{ name: 'alt', type: 'text' }],
+  fields: [
+    {
+      name: 'alt',
+      type: 'text',
+      label: 'Texte alternatif',
+      admin: {
+        description: "Texte alternatif pour l'accessibilite. Decrivez l'image en une phrase.",
+      },
+    },
+  ],
 }

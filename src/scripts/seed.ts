@@ -51,7 +51,7 @@ async function seed() {
 
   const existingPageContent = await payload.find({ collection: 'page-content', limit: 100 })
   for (const doc of existingPageContent.docs) {
-    await payload.delete({ collection: 'page-content', id: doc.id })
+    await payload.delete({ collection: 'page-content', id: doc.id, overrideAccess: true })
   }
 
   // Seed Programmes (3)
@@ -163,6 +163,7 @@ async function seed() {
         'Un accompagnement sur mesure adapte a vos objectifs et votre rythme de vie.',
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -175,6 +176,7 @@ async function seed() {
         'Des seances collectives motivantes pour progresser ensemble dans la bonne humeur.',
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -187,6 +189,7 @@ async function seed() {
         'Des conseils alimentaires pratiques et un plan adapte a vos besoins, sans regime restrictif.',
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -199,6 +202,7 @@ async function seed() {
         'Une evaluation complete de votre condition physique pour definir un point de depart clair.',
       ),
     },
+    overrideAccess: true,
   })
 
   // Seed PageContent — mon-histoire (page: 'mon-histoire', 5 timeline entries)
@@ -212,6 +216,7 @@ async function seed() {
         "Passion pour le sport des l'adolescence. Premiers cours de fitness donnes a des amis et collegues.",
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -224,6 +229,7 @@ async function seed() {
         'Obtention du BPJEPS Activites de la Forme. Debut en salle de sport en tant que coach independant.',
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -236,6 +242,7 @@ async function seed() {
         "Formation complementaire en micro-nutrition sportive. Approche holistique du coaching integrant alimentation et entrainement.",
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -248,6 +255,7 @@ async function seed() {
         "Creation de mon propre espace de coaching. Plus de 200 clients accompagnes avec un taux de satisfaction de 95%.",
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -260,6 +268,7 @@ async function seed() {
         "Lancement des programmes en ligne pour toucher un public plus large, tout en gardant l'accompagnement personnalise.",
       ),
     },
+    overrideAccess: true,
   })
 
   // Seed PageContent — mes-services (page: 'services', 3 items)
@@ -273,6 +282,7 @@ async function seed() {
         "Seances d'une heure en face-a-face ou en visio. Bilan initial, programme sur mesure et suivi regulier de vos progres.",
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -285,6 +295,7 @@ async function seed() {
         "Sessions de 4 a 8 personnes, deux fois par semaine. Cardio, renforcement et etirements dans une ambiance conviviale et motivante.",
       ),
     },
+    overrideAccess: true,
   })
 
   await payload.create({
@@ -297,6 +308,7 @@ async function seed() {
         "Un plan d'entrainement et nutritionnel personnalise livre chaque semaine. Suivi par messages et visio bimensuelle.",
       ),
     },
+    overrideAccess: true,
   })
 
   const programmesCount = 3

@@ -2,30 +2,66 @@ import type { CollectionConfig } from 'payload'
 
 export const PageContent: CollectionConfig = {
   slug: 'page-content',
+  labels: {
+    singular: 'Contenu de page',
+    plural: 'Contenu des pages',
+  },
   access: {
     read: () => true,
+    create: () => false, // Structure fixee — seed uniquement (D-05)
+    delete: () => false, // Structure fixee — pas de suppression (D-12)
   },
   admin: {
     useAsTitle: 'section',
-    defaultColumns: ['page', 'section'],
+    description: 'Textes et images de chaque section de page. Cliquez sur une section pour la modifier.',
+    group: 'Contenu',
+    defaultColumns: ['page', 'section', 'titre'],
+    listSearchableFields: ['page', 'section', 'titre'],
   },
   fields: [
     {
       name: 'page',
       type: 'select',
       required: true,
+      label: 'Page',
+      admin: { description: 'Page publique concernee par cette section' },
       options: [
-        'accueil',
-        'mon-histoire',
-        'services',
-        'programmes',
-        'resultats',
-        'contact',
+        { label: 'Accueil', value: 'accueil' },
+        { label: 'Mon Histoire', value: 'mon-histoire' },
+        { label: 'Services', value: 'services' },
+        { label: 'Programmes', value: 'programmes' },
+        { label: 'Resultats', value: 'resultats' },
+        { label: 'Contact', value: 'contact' },
       ],
     },
-    { name: 'section', type: 'text', required: true },
-    { name: 'titre', type: 'text' },
-    { name: 'contenu', type: 'richText' },
-    { name: 'image', type: 'upload', relationTo: 'media' },
+    {
+      name: 'section',
+      type: 'text',
+      required: true,
+      label: 'Section',
+      admin: { description: 'Identifiant interne de la section, ex : hero, services, cta' },
+    },
+    {
+      name: 'titre',
+      type: 'text',
+      label: 'Titre',
+      admin: { description: 'Titre principal affiche dans cette section' },
+    },
+    {
+      name: 'contenu',
+      type: 'richText',
+      label: 'Contenu',
+      admin: {
+        description:
+          'Texte de la section. Mise en forme disponible : gras, italique, listes, liens.',
+      },
+    },
+    {
+      name: 'image',
+      type: 'upload',
+      relationTo: 'media',
+      label: 'Image',
+      admin: { description: 'Image illustrative de la section (max 5 MB, JPEG/PNG/WebP)' },
+    },
   ],
 }

@@ -5,6 +5,7 @@ export const Users: CollectionConfig = {
   auth: true,
   admin: {
     useAsTitle: 'email',
+    hidden: true, // Masque de la sidebar — mot de passe via menu profil (D-11)
   },
   fields: [
     // email and password are automatically added by auth: true
