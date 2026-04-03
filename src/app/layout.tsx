@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat, Inter } from 'next/font/google'
 import React from 'react'
 import { Analytics } from '@vercel/analytics/next'
+import CookieBanner from '@/components/ui/CookieBanner'
 import './globals.css'
 
 const montserrat = Montserrat({
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-body bg-blanc-pur text-bleu-nuit">
         {children}
         <Analytics />
+        <CookieBanner />
       </body>
     </html>
   )

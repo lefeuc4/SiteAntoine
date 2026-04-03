@@ -38,8 +38,8 @@
 
 - [x] **SEO-01**: Meta tags, titres et structure HTML semantique sur chaque page
 - [x] **SEO-02**: Redirections 301 depuis les anciennes URLs WordPress vers les nouvelles pages
-- [ ] **LGAL-01**: Bandeau cookies conforme RGPD
-- [ ] **LGAL-02**: Page mentions legales
+- [x] **LGAL-01**: Bandeau cookies conforme RGPD
+- [x] **LGAL-02**: Page mentions legales
 - [x] **LGAL-03**: Champ de consentement dans l'admin pour chaque photo client (conformite CNIL)
 
 ### Deploiement
@@ -97,8 +97,8 @@
 | CTCT-02 | Phase 4 | Complete |
 | SEO-01 | Phase 5 | Complete |
 | SEO-02 | Phase 5 | Complete |
-| LGAL-01 | Phase 5 | Pending |
-| LGAL-02 | Phase 5 | Pending |
+| LGAL-01 | Phase 5 | Complete |
+| LGAL-02 | Phase 5 | Complete |
 | LGAL-03 | Phase 5 | Complete |
 | DPLY-01 | Phase 1 | Complete |
 | DPLY-02 | Phase 5 | Pending |

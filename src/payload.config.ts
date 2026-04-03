@@ -20,6 +20,7 @@ import { Programmes } from './collections/Programmes'
 import { Resultats } from './collections/Resultats'
 import { PageContent } from './collections/PageContent'
 import { ContactSettings } from './globals/ContactSettings'
+import { MentionsLegales } from './globals/MentionsLegales'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -66,7 +67,7 @@ export default buildConfig({
       fileSize: 5_000_000, // 5 MB — server-side only, clientUploads bypasses this (Payload #12671)
     },
   },
-  globals: [ContactSettings],
+  globals: [ContactSettings, MentionsLegales],
   collections: [Users, Media, Programmes, Resultats, PageContent],
   sharp,
   typescript: {
