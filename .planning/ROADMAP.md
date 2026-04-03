@@ -64,7 +64,11 @@ Plans:
   3. Antoine peut creer, modifier et supprimer un resultat avant/apres (photos avant, photos apres, prenom client, histoire, programme suivi, duree, citation) avec un champ de consentement CNIL obligatoire
   4. Les images uploadees par Antoine sont automatiquement converties en WebP et redimensionnees sans intervention technique
   5. Antoine peut modifier les textes et images de chaque page publique depuis l'admin
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — Payload config (i18n French, Lexical restriction, upload limit) + all collection French labels, descriptions, access control, sidebar groups + seed fix
+- [ ] 03-02-PLAN.md — Custom dashboard widget (counters + quick-action links) + admin visual verification
+**UI hint**: yes
 
 ### Phase 4: Formulaire de Contact
 **Goal**: Les visiteurs peuvent contacter Antoine via un formulaire email et un lien WhatsApp depuis le site
@@ -97,6 +101,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Fondation | 2/2 | Complete   | 2026-04-01 |
 | 2. Pages Publiques | 4/5 | In Progress|  |
-| 3. Interface Admin | 0/? | Not started | - |
+| 3. Interface Admin | 0/2 | Not started | - |
 | 4. Formulaire de Contact | 0/? | Not started | - |
 | 5. SEO, Conformite & Deploiement | 0/? | Not started | - |
