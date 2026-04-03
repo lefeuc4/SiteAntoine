@@ -3,7 +3,7 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 05-02-PLAN.md
+stopped_at: Phase 05 plans 01-02 complete, plan 03 (deployment) pending user action
 last_updated: "2026-04-03T14:35:49.409Z"
 last_activity: 2026-04-03
 progress:
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-01)
 
 **Core value:** Antoine peut mettre a jour son site de maniere autonome via une interface d'admin simple
-**Current focus:** Phase 04 — formulaire-de-contact
+**Current focus:** Phase 05 — seo-conformite-deploiement (plans 01-02 done, 03 pending)
 
 ## Current Position
 
 Phase: 5
-Plan: Not started
-Status: Ready to execute
+Plan: 05-03 (deployment)
+Status: Waiting on user — Vercel deployment + DNS setup
 Last activity: 2026-04-03
 
 Progress: [░░░░░░░░░░] 0%
