@@ -78,7 +78,11 @@ Plans:
   1. Un visiteur peut envoyer un message via le formulaire de contact (nom, email, message) et Antoine recoit l'email dans sa boite de reception (pas dans les spams)
   2. Un visiteur peut cliquer sur le lien WhatsApp depuis le site et ouvrir directement une conversation avec Antoine
   3. Une tentative de spam via le formulaire est bloquee silencieusement (honeypot actif)
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 04-01-PLAN.md — Install dependencies (resend, react-hook-form, zod), ContactSettings Payload Global, Server Action for email via Resend
+- [ ] 04-02-PLAN.md — ContactForm + WhatsAppBlock + SocialBlock components, /contact page, FloatingWhatsApp in layout
+**UI hint**: yes
 
 ### Phase 5: SEO, Conformite & Deploiement
 **Goal**: Le site est en ligne sur Vercel avec HTTPS, domaine personnalise, les redirections WordPress en place, le SEO de base configure et la conformite RGPD satisfaite
@@ -95,12 +99,12 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fondation | 2/2 | Complete   | 2026-04-01 |
 | 2. Pages Publiques | 4/5 | In Progress|  |
 | 3. Interface Admin | 1/2 | In Progress|  |
-| 4. Formulaire de Contact | 0/? | Not started | - |
+| 4. Formulaire de Contact | 0/2 | Not started | - |
 | 5. SEO, Conformite & Deploiement | 0/? | Not started | - |
