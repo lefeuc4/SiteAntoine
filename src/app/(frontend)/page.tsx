@@ -43,8 +43,9 @@ const iconByIndex = ['heart', 'users', 'zap', 'target']
 export default async function Home() {
   const payload = await getPayload({ config })
 
-  // Fetch Accueil global for hero, presentation and CTA content
-  const accueil = await payload.findGlobal({ slug: 'accueil', depth: 1 })
+  // Fetch Accueil collection (singleton) for hero, presentation and CTA content
+  const accueilData = await payload.find({ collection: 'accueil', limit: 1, depth: 1 })
+  const accueil = accueilData.docs[0] ?? {} as Record<string, unknown>
 
   // Fetch services apercu
   const servicesData = await payload.find({

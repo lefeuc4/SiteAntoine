@@ -1,13 +1,20 @@
-import type { GlobalConfig } from 'payload'
+import type { CollectionConfig } from 'payload'
 
-export const Accueil: GlobalConfig = {
+export const Accueil: CollectionConfig = {
   slug: 'accueil',
-  label: 'Accueil',
-  admin: {
-    description: "Contenu de la page d'accueil (hero, presentation, CTA)",
+  labels: {
+    singular: 'Accueil',
+    plural: 'Accueil',
   },
   access: {
     read: () => true,
+    create: () => false,
+    delete: () => false,
+  },
+  admin: {
+    useAsTitle: 'heroTitre',
+    description: "Contenu de la page d'accueil (hero, presentation, CTA)",
+    group: 'Pages',
   },
   fields: [
     {
