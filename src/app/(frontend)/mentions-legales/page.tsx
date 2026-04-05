@@ -36,7 +36,7 @@ export default async function MentionsLegalesPage() {
         <h1 className="text-xl font-heading font-bold text-bleu-nuit mb-8">Mentions legales</h1>
 
         {hasContent ? (
-          <div className="prose prose-bleu max-w-none">
+          <div className="[&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-bleu-nuit [&_h2]:mt-12 [&_h2]:mb-4 [&_a]:text-bleu-electrique [&_a]:underline">
             <RichText data={data.contenu as any} />
           </div>
         ) : (
