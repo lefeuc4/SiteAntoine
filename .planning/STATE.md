@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-04-01)
 Phase: 05.1
 Plan: Not started
 Status: Ready to execute
-Last activity: 2026-04-05
+Last activity: 2026-04-05 - Completed quick task 260405-5bc: Fix root 404 page and admin hydration error
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -104,6 +104,12 @@ Recent decisions affecting current work:
 ### Pending Todos
 
 None yet.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260405-5bc | Fix root 404 page and admin hydration error | 2026-04-05 | f8ee1ae | [260405-5bc-fix-root-404-page-and-admin-hydration-er](./quick/260405-5bc-fix-root-404-page-and-admin-hydration-er/) |
 
 ### Blockers/Concerns
 
