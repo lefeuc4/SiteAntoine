@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { createConfirmDeleteHook } from '@/hooks/confirmDeleteHook'
 
 export const PageContent: CollectionConfig = {
   slug: 'page-content',
@@ -8,8 +9,10 @@ export const PageContent: CollectionConfig = {
   },
   access: {
     read: () => true,
-    create: () => false, // Structure fixee — seed uniquement (D-05)
-    delete: () => false, // Structure fixee — pas de suppression (D-12)
+    // create and delete unlocked — delete protected by confirmation hook
+  },
+  hooks: {
+    beforeDelete: [createConfirmDeleteHook('titre')],
   },
   admin: {
     useAsTitle: 'section',

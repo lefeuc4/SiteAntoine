@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { createConfirmDeleteHook } from '@/hooks/confirmDeleteHook'
 
 export const Programmes: CollectionConfig = {
   slug: 'programmes',
@@ -8,6 +9,9 @@ export const Programmes: CollectionConfig = {
   },
   access: {
     read: () => true,
+  },
+  hooks: {
+    beforeDelete: [createConfirmDeleteHook('titre')],
   },
   admin: {
     useAsTitle: 'titre',
