@@ -29,6 +29,10 @@ const dirname = path.dirname(filename)
 export default buildConfig({
   secret: process.env.PAYLOAD_SECRET!,
   admin: {
+    meta: {
+      title: 'Administration',
+      titleSuffix: '— Administration',
+    },
     components: {
       beforeDashboard: ['@/components/admin/DashboardWidget'],
     },
@@ -36,6 +40,18 @@ export default buildConfig({
   i18n: {
     fallbackLanguage: 'fr',
     supportedLanguages: { fr },
+    translations: {
+      fr: {
+        general: {
+          addNew: 'Créer',
+          addNewLabel: 'Créer un nouveau {{label}}',
+          createNew: 'Créer',
+          createNewLabel: 'Créer un nouveau {{label}}',
+          creatingNewLabel: 'Création d\u2019un nouveau {{label}}',
+          newLabel: 'Nouveau {{label}}',
+        },
+      },
+    },
   },
   editor: lexicalEditor({
     features: [
