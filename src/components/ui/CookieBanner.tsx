@@ -6,9 +6,9 @@ export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    if (!localStorage.getItem('cookie-consent')) {
-      setVisible(true)
-    }
+    const show = !localStorage.getItem('cookie-consent')
+    setVisible(show)
+    window.dispatchEvent(new CustomEvent('cookie-banner', { detail: { visible: show } }))
   }, [])
 
   if (!visible) return null
@@ -16,6 +16,7 @@ export default function CookieBanner() {
   const handleConsent = (value: 'accepted' | 'refused') => {
     localStorage.setItem('cookie-consent', value)
     setVisible(false)
+    window.dispatchEvent(new CustomEvent('cookie-banner', { detail: { visible: false } }))
   }
 
   return (
