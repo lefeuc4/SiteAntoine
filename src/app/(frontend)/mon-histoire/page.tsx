@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   },
 }
 
+function parseTitre(titre: string): { annee: string | null; nom: string } {
+  const match = titre.match(/^(\d{4})\s*[—–-]\s*(.+)$/)
+  if (match) return { annee: match[1], nom: match[2].trim() }
+  return { annee: null, nom: titre }
+}
+
 function extractPlainText(contenu: unknown): string {
   if (!contenu || typeof contenu !== 'object') return ''
   const root = (contenu as Record<string, unknown>).root
@@ -61,6 +67,7 @@ export default async function MonHistoirePage() {
 
           {entries.map((entry, i) => {
             const plainText = extractPlainText(entry.contenu)
+            const { annee, nom } = parseTitre(entry.titre || '')
             return (
               <ScrollReveal key={entry.id}>
                 <div className="relative mb-16 lg:flex lg:items-start lg:gap-8">
@@ -75,9 +82,10 @@ export default async function MonHistoirePage() {
                         : 'lg:ml-auto lg:pl-8'
                     }`}
                   >
-                    <h3 className="text-xl font-heading font-bold text-bleu-nuit mb-2">
-                      {entry.titre}
-                    </h3>
+                    {annee && (
+                      <span className="text-sm font-body text-gris-ardoise block mb-1">{annee}</span>
+                    )}
+                    <h3 className="text-xl font-heading font-bold text-bleu-nuit mb-2">{nom}</h3>
                     <p className="text-base font-body text-gris-ardoise">{plainText}</p>
                   </div>
                 </div>
