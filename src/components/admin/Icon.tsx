@@ -4,7 +4,7 @@ export default function Icon() {
   return (
     <div
       style={{
-        width: '2.5rem',
+        width: '3.25rem',
         height: '1.5rem',
         borderRadius: '0.25rem',
         backgroundColor: '#0F172A',
