@@ -93,8 +93,8 @@ export default buildConfig({
       fileSize: 5_000_000, // 5 MB — server-side only, clientUploads bypasses this (Payload #12671)
     },
   },
-  globals: [ContactSettings, MentionsLegales, Accueil],
-  collections: [Users, Media, Programmes, Resultats, PageContent],
+  globals: [Accueil, ContactSettings, MentionsLegales],
+  collections: [Users, PageContent, Programmes, Resultats, Media],
   sharp,
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),

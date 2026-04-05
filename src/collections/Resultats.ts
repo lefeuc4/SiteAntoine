@@ -16,7 +16,7 @@ export const Resultats: CollectionConfig = {
   admin: {
     useAsTitle: 'prenomClient',
     description: 'Gerez les transformations clients avec photos avant/apres et temoignages.',
-    group: 'Contenu',
+    group: 'Pages',
     components: {
       edit: {
         beforeDocumentControls: ['@/components/admin/SafeDeleteButton'],

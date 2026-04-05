@@ -5,7 +5,7 @@ export const ContactSettings: GlobalConfig = {
   label: 'Parametres Contact',
   admin: {
     description: 'Numero WhatsApp, message pre-rempli et liens reseaux sociaux',
-    group: 'Configuration',
+    group: 'Pages',
   },
   access: {
     read: () => true,

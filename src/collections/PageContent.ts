@@ -17,7 +17,7 @@ export const PageContent: CollectionConfig = {
   admin: {
     useAsTitle: 'section',
     description: 'Textes et images de chaque section de page. Cliquez sur une section pour la modifier.',
-    group: 'Contenu',
+    group: 'Pages',
     defaultColumns: ['page', 'section', 'titre'],
     listSearchableFields: ['page', 'section', 'titre'],
     components: {

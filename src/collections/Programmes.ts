@@ -16,7 +16,7 @@ export const Programmes: CollectionConfig = {
   admin: {
     useAsTitle: 'titre',
     description: 'Gerez les programmes de coaching proposes par Antoine.',
-    group: 'Contenu',
+    group: 'Pages',
     defaultColumns: ['titre', 'duree', 'ordre'],
     components: {
       edit: {

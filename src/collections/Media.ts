@@ -3,15 +3,15 @@ import type { CollectionConfig } from 'payload'
 export const Media: CollectionConfig = {
   slug: 'media',
   labels: {
-    singular: 'Media',
-    plural: 'Medias',
+    singular: 'Média',
+    plural: 'Médias',
   },
   access: {
     read: () => true,
   },
   admin: {
     description: "Bibliotheque d'images. Taille maximale : 5 MB. Formats acceptes : JPEG, PNG, WebP.",
-    group: 'Contenu',
+    group: 'Pages',
   },
   upload: {
     // mimeTypes and imageSizes removed: with clientUploads: true (Vercel Blob),
