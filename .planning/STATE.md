@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 05.1 UI-SPEC approved
-last_updated: "2026-04-05T00:50:07.923Z"
-last_activity: 2026-04-05 -- Phase 05.1 execution started
+stopped_at: Completed 05.1-02-PLAN.md
+last_updated: "2026-04-05T00:53:38.674Z"
+last_activity: 2026-04-05
 progress:
   total_phases: 6
-  completed_phases: 4
+  completed_phases: 5
   total_plans: 16
-  completed_plans: 13
+  completed_plans: 15
   percent: 0
 ---
 
@@ -26,9 +26,9 @@ See: .planning/PROJECT.md (updated 2026-04-01)
 ## Current Position
 
 Phase: 05.1 (frontend-polish) — EXECUTING
-Plan: 1 of 2
-Status: Executing Phase 05.1
-Last activity: 2026-04-05 -- Phase 05.1 execution started
+Plan: 2 of 2
+Status: Ready to execute
+Last activity: 2026-04-05
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -62,6 +62,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 04-formulaire-de-contact P02 | 2min | 2 tasks | 6 files |
 | Phase 05 P01 | 3min | 2 tasks | 11 files |
 | Phase 05 P02 | 10min | 2 tasks | 8 files |
+| Phase 05.1-frontend-polish P02 | 8min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -93,6 +94,8 @@ Recent decisions affecting current work:
 - [Phase 05]: robots.ts disallows /admin only (not /api) — Payload API endpoints must remain accessible
 - [Phase 05]: dynamic = 'force-dynamic' on /mentions-legales — Payload Global pages must opt out of static generation to avoid build-time DB errors
 - [Phase 05]: CookieBanner useState(false) init prevents SSR hydration mismatch — localStorage only available client-side
+- [Phase 05.1-frontend-polish]: parseTitre uses regex to support em-dash, en-dash, hyphen separators for year extraction from timeline titles
+- [Phase 05.1-frontend-polish]: tabIndex={0} required on div cards for keyboard focusability — focus-visible:ring pattern cannot activate without it
 
 ### Roadmap Evolution
 
@@ -110,6 +113,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-05T00:30:38.749Z
-Stopped at: Phase 05.1 UI-SPEC approved
-Resume file: .planning/phases/05.1-frontend-polish/05.1-UI-SPEC.md
+Last session: 2026-04-05T00:53:38.672Z
+Stopped at: Completed 05.1-02-PLAN.md
+Resume file: None

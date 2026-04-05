@@ -119,8 +119,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 **Goal:** Corriger les 12 deviations identifiees par l'audit UI (score 17/24) — UX states manquants, tokens typographiques/couleur/espacement non conformes, labels annees timeline, focus rings accessibilite
 **Requirements**: UX-STATES, COLOR-TOKEN, COPY-SEPARATOR, TYPO-TOKENS, SPACING-TOKENS, TIMELINE-YEAR, FOCUS-RINGS
 **Depends on:** Phase 5
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 05.1-01-PLAN.md — UX state files (error.tsx, loading.tsx, not-found.tsx) + header bg token fix + title separator fix
-- [ ] 05.1-02-PLAN.md — Typography/spacing token fixes + timeline year labels + card focus rings
+- [x] 05.1-01-PLAN.md — UX state files (error.tsx, loading.tsx, not-found.tsx) + header bg token fix + title separator fix
+- [x] 05.1-02-PLAN.md — Typography/spacing token fixes + timeline year labels + card focus rings
