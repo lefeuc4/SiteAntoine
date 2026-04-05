@@ -4,7 +4,7 @@ export default function Icon() {
   return (
     <div
       style={{
-        width: '1.5rem',
+        width: '2.5rem',
         height: '1.5rem',
         borderRadius: '0.25rem',
         backgroundColor: '#0F172A',
@@ -16,13 +16,14 @@ export default function Icon() {
       <span
         style={{
           color: '#FFFFFF',
-          fontSize: '0.875rem',
+          fontSize: '0.625rem',
           fontWeight: 700,
           fontFamily: 'system-ui, sans-serif',
           lineHeight: 1,
+          letterSpacing: '0.05em',
         }}
       >
-        A
+        TDB
       </span>
     </div>
   )
