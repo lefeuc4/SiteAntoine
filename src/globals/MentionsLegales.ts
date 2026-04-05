@@ -5,7 +5,7 @@ export const MentionsLegales: GlobalConfig = {
   label: 'Mentions Legales',
   admin: {
     description: 'Contenu de la page Mentions Legales (RGPD, hebergeur, SIRET...)',
-    group: 'Pages',
+    group: 'Configuration',
   },
   access: {
     read: () => true,
