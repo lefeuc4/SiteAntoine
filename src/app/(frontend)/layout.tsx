@@ -29,6 +29,8 @@ export default async function FrontendLayout({ children }: { children: React.Rea
 
   const whatsappNumber = (settings as any).whatsappNumber as string
   const whatsappMessage = (settings as any).whatsappMessage as string
+  const instagramUrl = ((settings as any).instagramUrl as string) || ''
+  const facebookUrl = ((settings as any).facebookUrl as string) || ''
 
   return (
     <html lang="fr" className={`${montserrat.variable} ${inter.variable}`}>
@@ -36,7 +38,7 @@ export default async function FrontendLayout({ children }: { children: React.Rea
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <FloatingWhatsApp whatsappNumber={whatsappNumber} whatsappMessage={whatsappMessage} />
+        <FloatingWhatsApp whatsappNumber={whatsappNumber} whatsappMessage={whatsappMessage} instagramUrl={instagramUrl} facebookUrl={facebookUrl} />
         <Analytics />
         <CookieBanner />
       </body>
