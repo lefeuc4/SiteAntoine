@@ -33,7 +33,7 @@ export default async function MentionsLegalesPage() {
   return (
     <div className="pt-32">
       <div className="max-w-3xl mx-auto px-4 py-16">
-        <h1 className="text-2xl font-bold text-bleu-nuit mb-8">Mentions legales</h1>
+        <h1 className="text-xl font-heading font-bold text-bleu-nuit mb-8">Mentions legales</h1>
 
         {hasContent ? (
           <div className="prose prose-bleu max-w-none">

@@ -31,7 +31,8 @@ export default function ServiceCard({ titre, description, icone }: ServiceCardPr
 
   return (
     <div
-      className="bg-blanc-pur border border-gris-ardoise/20 rounded-xl p-6 hover:shadow-md hover:-translate-y-0.5 transition-all"
+      tabIndex={0}
+      className="bg-blanc-pur border border-gris-ardoise/20 rounded-xl p-6 hover:shadow-md hover:-translate-y-0.5 transition-all focus-visible:ring-2 focus-visible:ring-bleu-electrique focus-visible:outline-none"
       style={{ transitionDuration: 'var(--transition-base)' }}
     >
       <IconComponent size={32} className="text-bleu-electrique mb-4" />

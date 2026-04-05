@@ -28,7 +28,7 @@ export default function ResultatCard({
   ].filter(Boolean)
 
   return (
-    <div className="bg-blanc-pur rounded-2xl overflow-hidden shadow-sm border border-gris-ardoise/10">
+    <div tabIndex={0} className="bg-blanc-pur rounded-2xl overflow-hidden shadow-sm border border-gris-ardoise/10 focus-visible:ring-2 focus-visible:ring-bleu-electrique focus-visible:outline-none">
       {/* Before/after slider */}
       <BeforeAfterSlider
         avantSrc={photoAvantUrl}
@@ -48,9 +48,9 @@ export default function ResultatCard({
         {/* Citation */}
         {citation && (
           <blockquote className="italic text-base font-body text-bleu-nuit mb-3">
-            <span className="text-bleu-electrique text-2xl not-italic">&ldquo;</span>
+            <span className="text-bleu-electrique text-xl not-italic">&ldquo;</span>
             {citation}
-            <span className="text-bleu-electrique text-2xl not-italic">&rdquo;</span>
+            <span className="text-bleu-electrique text-xl not-italic">&rdquo;</span>
           </blockquote>
         )}
       </div>

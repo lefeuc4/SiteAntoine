@@ -20,7 +20,8 @@ export default function ProgrammeCard({
 }: ProgrammeCardProps) {
   return (
     <div
-      className="bg-blanc-pur border border-gris-ardoise/10 rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all"
+      tabIndex={0}
+      className="bg-blanc-pur border border-gris-ardoise/10 rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all focus-visible:ring-2 focus-visible:ring-bleu-electrique focus-visible:outline-none"
       style={{ transitionDuration: 'var(--transition-base)' }}
     >
       {/* Image area */}
