@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://antoineprofit.com'),
   title: {
     default: 'Antoine Profit — Coach Bien-Etre',
-    template: '%s | Antoine Profit',
+    template: '%s — Antoine Profit',
   },
   description: 'Coaching bien-etre, nutrition et transformation physique avec Antoine Profit',
 }

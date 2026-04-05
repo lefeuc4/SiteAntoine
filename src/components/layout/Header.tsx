@@ -26,7 +26,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const bgClass = scrolled ? 'bg-white shadow-sm' : 'bg-white'
+  const bgClass = scrolled ? 'bg-blanc-pur shadow-sm' : 'bg-blanc-pur'
   const textClass = 'text-bleu-nuit'
 
   return (
