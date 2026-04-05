@@ -7,6 +7,7 @@ import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import { fr } from '@payloadcms/translations/languages/fr'
 import {
   lexicalEditor,
+  HeadingFeature,
   BoldFeature,
   ItalicFeature,
   UnorderedListFeature,
@@ -38,6 +39,7 @@ export default buildConfig({
   },
   editor: lexicalEditor({
     features: [
+      HeadingFeature(),
       BoldFeature(),
       ItalicFeature(),
       UnorderedListFeature(),
