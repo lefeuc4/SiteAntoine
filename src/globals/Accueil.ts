@@ -5,7 +5,6 @@ export const Accueil: GlobalConfig = {
   label: 'Accueil',
   admin: {
     description: "Contenu de la page d'accueil (hero, presentation, CTA)",
-    group: 'Pages',
   },
   access: {
     read: () => true,
