@@ -65,7 +65,7 @@ export default async function MonHistoirePage() {
               <ScrollReveal key={entry.id}>
                 <div className="relative mb-16 lg:flex lg:items-start lg:gap-8">
                   {/* Dot */}
-                  <div className="absolute left-[-2rem] top-1 w-3 h-3 rounded-full bg-bleu-electrique border-2 border-blanc-pur lg:left-1/2 lg:-translate-x-1/2 lg:top-2 z-10" />
+                  <div className="absolute -left-8 top-1 w-3 h-3 rounded-full bg-bleu-electrique border-2 border-blanc-pur lg:left-1/2 lg:-translate-x-1/2 lg:top-2 z-10" />
 
                   {/* Content */}
                   <div

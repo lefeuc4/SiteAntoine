@@ -31,7 +31,7 @@ export default async function ContactPage() {
 
   return (
     <main className="max-w-[1280px] mx-auto px-8 lg:px-12 py-12 lg:py-16">
-      <h1 className="text-[1.75rem] lg:text-[2.25rem] font-heading font-bold text-bleu-nuit mb-12 text-center">
+      <h1 className="text-xl lg:text-4xl font-heading font-bold text-bleu-nuit mb-12 text-center">
         Contactez-moi
       </h1>
 

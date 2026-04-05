@@ -48,9 +48,9 @@ export default function ResultatCard({
         {/* Citation */}
         {citation && (
           <blockquote className="italic text-base font-body text-bleu-nuit mb-3">
-            <span className="text-bleu-electrique text-2xl not-italic">&ldquo;</span>
+            <span className="text-bleu-electrique text-xl not-italic">&ldquo;</span>
             {citation}
-            <span className="text-bleu-electrique text-2xl not-italic">&rdquo;</span>
+            <span className="text-bleu-electrique text-xl not-italic">&rdquo;</span>
           </blockquote>
         )}
       </div>
