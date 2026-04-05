@@ -1,11 +1,15 @@
 import Link from 'next/link'
 
-export default function CTABandeau() {
+interface CTABandeauProps {
+  ctaTitre?: string
+}
+
+export default function CTABandeau({ ctaTitre }: CTABandeauProps) {
   return (
     <section className="bg-bleu-nuit py-12 lg:py-16 px-8">
       <div className="max-w-[1280px] mx-auto text-center">
         <h2 className="text-xl lg:text-4xl font-heading font-bold text-blanc-pur mb-6">
-          Pret a transformer ta vie ?
+          {ctaTitre ?? 'Pret a transformer ta vie ?'}
         </h2>
         <Link
           href="/contact"

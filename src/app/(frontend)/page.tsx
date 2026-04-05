@@ -43,6 +43,9 @@ const iconByIndex = ['heart', 'users', 'zap', 'target']
 export default async function Home() {
   const payload = await getPayload({ config })
 
+  // Fetch Accueil global for hero, presentation and CTA content
+  const accueil = await payload.findGlobal({ slug: 'accueil', depth: 1 })
+
   // Fetch services apercu
   const servicesData = await payload.find({
     collection: 'page-content',
@@ -81,7 +84,11 @@ export default async function Home() {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection
+        heroTitre={accueil.heroTitre}
+        heroDescription={accueil.heroDescription}
+        heroImageUrl={(accueil.heroImage as { url?: string } | undefined)?.url}
+      />
 
       <ScrollReveal>
         <ServicesApercu services={services} />
@@ -91,9 +98,7 @@ export default async function Home() {
       <section className="py-12 lg:py-16 px-8 lg:px-12 max-w-[1280px] mx-auto">
         <ScrollReveal>
           <p className="text-base font-body text-gris-ardoise max-w-2xl">
-            Coach passionne depuis plus de 10 ans, j&apos;accompagne des femmes et des hommes dans
-            leur transformation physique et mentale. Mon approche allie entrainement personnalise,
-            nutrition adaptee et suivi bienveillant.{' '}
+            {accueil.presentation}{' '}
             <Link href="/mon-histoire" className="text-bleu-electrique hover:underline font-heading">
               Decouvrir mon parcours →
             </Link>
@@ -103,7 +108,7 @@ export default async function Home() {
 
       <ResultatsVedette resultats={resultats} />
 
-      <CTABandeau />
+      <CTABandeau ctaTitre={accueil.ctaTitre} />
     </>
   )
 }
