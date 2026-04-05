@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     template: '%s — Antoine Profit',
   },
   description: 'Coaching bien-etre, nutrition et transformation physique avec Antoine Profit',
+  icons: [{ type: 'image/svg+xml', url: '/favicon-site.svg' }],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
