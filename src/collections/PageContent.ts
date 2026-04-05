@@ -12,7 +12,7 @@ export const PageContent: CollectionConfig = {
     // create and delete unlocked — delete protected by confirmation hook
   },
   hooks: {
-    beforeDelete: [createConfirmDeleteHook('titre')],
+    beforeDelete: [createConfirmDeleteHook('section')],
   },
   admin: {
     useAsTitle: 'section',
@@ -20,6 +20,11 @@ export const PageContent: CollectionConfig = {
     group: 'Contenu',
     defaultColumns: ['page', 'section', 'titre'],
     listSearchableFields: ['page', 'section', 'titre'],
+    components: {
+      edit: {
+        beforeDocumentControls: ['@/components/admin/SafeDeleteButton'],
+      },
+    },
   },
   fields: [
     {

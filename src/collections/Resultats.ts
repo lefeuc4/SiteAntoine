@@ -17,6 +17,11 @@ export const Resultats: CollectionConfig = {
     useAsTitle: 'prenomClient',
     description: 'Gerez les transformations clients avec photos avant/apres et temoignages.',
     group: 'Contenu',
+    components: {
+      edit: {
+        beforeDocumentControls: ['@/components/admin/SafeDeleteButton'],
+      },
+    },
   },
   fields: [
     {

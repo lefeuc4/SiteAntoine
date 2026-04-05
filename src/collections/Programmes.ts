@@ -18,6 +18,11 @@ export const Programmes: CollectionConfig = {
     description: 'Gerez les programmes de coaching proposes par Antoine.',
     group: 'Contenu',
     defaultColumns: ['titre', 'duree', 'ordre'],
+    components: {
+      edit: {
+        beforeDocumentControls: ['@/components/admin/SafeDeleteButton'],
+      },
+    },
   },
   fields: [
     {
