@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-04-01)
 Phase: 05.1
 Plan: Not started
 Status: Ready to execute
-Last activity: 2026-04-05
+Last activity: 2026-04-05 - Completed quick task 260405-6ai: Unlock PageContent create/delete with safe confirmation
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -96,10 +96,17 @@ Recent decisions affecting current work:
 - [Phase 05]: CookieBanner useState(false) init prevents SSR hydration mismatch — localStorage only available client-side
 - [Phase 05.1-frontend-polish]: parseTitre uses regex to support em-dash, en-dash, hyphen separators for year extraction from timeline titles
 - [Phase 05.1-frontend-polish]: tabIndex={0} required on div cards for keyboard focusability — focus-visible:ring pattern cannot activate without it
+- [Quick 260405-6ai]: beforeDelete hook factory pattern with X-Delete-Confirmation header for safe deletions; PageContent uses 'section' field (matching useAsTitle) not 'titre'
 
 ### Roadmap Evolution
 
 - Phase 05.1 inserted after Phase 05: Frontend polish (INSERTED) — based on UI audit scoring 17/24
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260405-6ai | Unlock PageContent create/delete with safe confirmation | 2026-04-05 | 8c87fe4 | [260405-6ai-unlock-pagecontent-create-delete-with-sa](./quick/260405-6ai-unlock-pagecontent-create-delete-with-sa/) |
 
 ### Pending Todos
 
@@ -113,6 +120,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-05T00:53:38.672Z
-Stopped at: Completed 05.1-02-PLAN.md
+Last session: 2026-04-05T02:42:15Z
+Stopped at: Completed quick task 260405-6ai
 Resume file: None
