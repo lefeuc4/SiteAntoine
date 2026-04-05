@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-04-01)
 Phase: 05.1
 Plan: Not started
 Status: Ready to execute
-Last activity: 2026-04-05 - Completed quick task 260405-7jm: Pre-remplir editeur admin Mentions Legales avec le contenu fallback
+Last activity: 2026-04-05 - Completed quick task 260405-8ah: Global Accueil avec champs editables
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -109,6 +109,7 @@ Recent decisions affecting current work:
 | 260405-5bc | Fix root 404 page and admin hydration error | 2026-04-05 | f8ee1ae | [260405-5bc-fix-root-404-page-and-admin-hydration-er](./quick/260405-5bc-fix-root-404-page-and-admin-hydration-er/) |
 | 260405-6ai | Unlock PageContent create/delete with safe confirmation | 2026-04-05 | 8c87fe4 | [260405-6ai-unlock-pagecontent-create-delete-with-sa](./quick/260405-6ai-unlock-pagecontent-create-delete-with-sa/) |
 | 260405-7jm | Pre-remplir editeur admin Mentions Legales avec le contenu fallback de la page publique | 2026-04-05 | 08f4aad | [260405-7jm-pre-remplir-editeur-admin-mentions-legal](./quick/260405-7jm-pre-remplir-editeur-admin-mentions-legal/) |
+| 260405-8ah | Global Accueil avec 5 champs editables + branchement composants | 2026-04-05 | 9f36b58 | [260405-8ah-creer-global-accueil-avec-herotitre-hero](./quick/260405-8ah-creer-global-accueil-avec-herotitre-hero/) |
 
 ### Pending Todos
 
