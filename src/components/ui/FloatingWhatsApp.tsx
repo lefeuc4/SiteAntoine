@@ -48,7 +48,7 @@ export default function FloatingWhatsApp({ whatsappNumber, whatsappMessage, inst
 
   return (
     <div
-      className={`fixed right-6 z-50 flex items-center gap-3 transition-all ${
+      className={`fixed right-6 z-50 flex items-end gap-3 transition-all ${
         visible ? 'opacity-100' : 'translate-y-4 opacity-0'
       }`}
       style={{
