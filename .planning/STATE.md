@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 05 plans 01-02 complete, plan 03 (deployment) pending user action
-last_updated: "2026-04-03T14:35:49.409Z"
-last_activity: 2026-04-03
+stopped_at: Phase 05.1 UI-SPEC approved
+last_updated: "2026-04-05T00:50:07.923Z"
+last_activity: 2026-04-05 -- Phase 05.1 execution started
 progress:
-  total_phases: 5
+  total_phases: 6
   completed_phases: 4
-  total_plans: 14
-  completed_plans: 12
+  total_plans: 16
+  completed_plans: 13
   percent: 0
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-01)
 
 **Core value:** Antoine peut mettre a jour son site de maniere autonome via une interface d'admin simple
-**Current focus:** Phase 05 — seo-conformite-deploiement (plans 01-02 done, 03 pending)
+**Current focus:** Phase 05.1 — frontend-polish
 
 ## Current Position
 
-Phase: 5
-Plan: 05-03 (deployment)
-Status: Waiting on user — Vercel deployment + DNS setup
-Last activity: 2026-04-03
+Phase: 05.1 (frontend-polish) — EXECUTING
+Plan: 1 of 2
+Status: Executing Phase 05.1
+Last activity: 2026-04-05 -- Phase 05.1 execution started
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -94,6 +94,10 @@ Recent decisions affecting current work:
 - [Phase 05]: dynamic = 'force-dynamic' on /mentions-legales — Payload Global pages must opt out of static generation to avoid build-time DB errors
 - [Phase 05]: CookieBanner useState(false) init prevents SSR hydration mismatch — localStorage only available client-side
 
+### Roadmap Evolution
+
+- Phase 05.1 inserted after Phase 05: Frontend polish (INSERTED) — based on UI audit scoring 17/24
+
 ### Pending Todos
 
 None yet.
@@ -106,6 +110,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T14:35:49.407Z
-Stopped at: Completed 05-02-PLAN.md
-Resume file: None
+Last session: 2026-04-05T00:30:38.749Z
+Stopped at: Phase 05.1 UI-SPEC approved
+Resume file: .planning/phases/05.1-frontend-polish/05.1-UI-SPEC.md
