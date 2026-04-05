@@ -35,6 +35,10 @@ export default buildConfig({
     },
     components: {
       beforeDashboard: ['@/components/admin/DashboardWidget'],
+      graphics: {
+        Logo: '@/components/admin/Logo',
+        Icon: '@/components/admin/Icon',
+      },
     },
   },
   i18n: {
