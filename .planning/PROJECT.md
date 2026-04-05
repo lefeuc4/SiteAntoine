@@ -83,4 +83,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-03 after Phase 3 (Interface Admin) complete — admin fully French, dashboard widget, restricted Lexical editor, upload working via Vercel Blob*
+*Last updated: 2026-04-05 after Phase 05.1 (Frontend Polish) complete — UX state pages added, typography/color/spacing tokens fixed, timeline year labels, card focus rings for accessibility*
