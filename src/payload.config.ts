@@ -32,6 +32,7 @@ export default buildConfig({
     meta: {
       title: 'Administration',
       titleSuffix: '— Administration',
+      icons: [{ type: 'image/svg+xml', url: '/favicon.svg' }],
     },
     components: {
       beforeDashboard: ['@/components/admin/DashboardWidget'],
