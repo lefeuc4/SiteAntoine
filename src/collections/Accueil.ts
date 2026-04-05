@@ -21,6 +21,15 @@ export const Accueil: CollectionConfig = {
   },
   fields: [
     {
+      name: 'titreOnglet',
+      type: 'text',
+      label: "Titre de l'onglet du navigateur",
+      defaultValue: 'Antoine Profit — Coach Bien-Etre',
+      admin: {
+        description: 'Le texte qui apparait dans l\'onglet du navigateur (ex: "Antoine Profit — Coach Bien-Etre")',
+      },
+    },
+    {
       name: 'heroTitre',
       type: 'text',
       label: 'Titre Hero',

@@ -8,19 +8,25 @@ import ResultatsVedette from '@/components/sections/ResultatsVedette'
 import CTABandeau from '@/components/sections/CTABandeau'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
-export const metadata: Metadata = {
-  title: { absolute: 'Antoine Profit — Coach Bien-Etre' },
-  description:
-    'Antoine Profit, coach bien-etre. Transformez votre sante et retrouvez votre energie avec un accompagnement personnalise.',
-  openGraph: {
-    title: 'Antoine Profit — Coach Bien-Etre',
+export async function generateMetadata(): Promise<Metadata> {
+  const payload = await getPayload({ config })
+  const accueilData = await payload.find({ collection: 'accueil', limit: 1 })
+  const titreOnglet = (accueilData.docs[0] as any)?.titreOnglet || 'Antoine Profit — Coach Bien-Etre'
+
+  return {
+    title: { absolute: titreOnglet },
     description:
       'Antoine Profit, coach bien-etre. Transformez votre sante et retrouvez votre energie avec un accompagnement personnalise.',
-    url: '/',
-    siteName: 'Antoine Profit — Coach Bien-Etre',
-    locale: 'fr_FR',
-    type: 'website',
-  },
+    openGraph: {
+      title: titreOnglet,
+      description:
+        'Antoine Profit, coach bien-etre. Transformez votre sante et retrouvez votre energie avec un accompagnement personnalise.',
+      url: '/',
+      siteName: titreOnglet,
+      locale: 'fr_FR',
+      type: 'website',
+    },
+  }
 }
 
 function extractPlainText(contenu: unknown): string {
