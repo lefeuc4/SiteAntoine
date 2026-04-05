@@ -15,6 +15,9 @@ export const Accueil: CollectionConfig = {
     useAsTitle: 'heroTitre',
     description: "Contenu de la page d'accueil (hero, presentation, CTA)",
     group: 'Pages',
+    components: {
+      beforeList: ['@/components/admin/SingletonRedirect'],
+    },
   },
   fields: [
     {
