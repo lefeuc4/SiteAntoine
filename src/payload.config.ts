@@ -53,6 +53,8 @@ export default buildConfig({
           createNewLabel: 'Créer un nouveau {{label}}',
           creatingNewLabel: 'Création d\u2019un nouveau {{label}}',
           newLabel: 'Nouveau {{label}}',
+          dashboard: 'Admin',
+          backToDashboard: 'Retour à Admin',
         },
       },
     },
