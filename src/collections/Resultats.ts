@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { createConfirmDeleteHook } from '@/hooks/confirmDeleteHook'
 
 export const Resultats: CollectionConfig = {
   slug: 'resultats',
@@ -9,10 +10,18 @@ export const Resultats: CollectionConfig = {
   access: {
     read: () => true,
   },
+  hooks: {
+    beforeDelete: [createConfirmDeleteHook('prenomClient')],
+  },
   admin: {
     useAsTitle: 'prenomClient',
     description: 'Gerez les transformations clients avec photos avant/apres et temoignages.',
     group: 'Contenu',
+    components: {
+      edit: {
+        beforeDocumentControls: ['@/components/admin/SafeDeleteButton'],
+      },
+    },
   },
   fields: [
     {
