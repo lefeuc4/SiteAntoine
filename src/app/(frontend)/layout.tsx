@@ -9,6 +9,8 @@ import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp'
 import CookieBanner from '@/components/ui/CookieBanner'
 import '../globals.css'
 
+export const dynamic = 'force-dynamic'
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['700', '900'],
